@@ -1,0 +1,30 @@
+.slidertitle {
+  font-size: 100px;
+  font-weight: 100;
+  margin: 0 ; /* Set margin to 0 to remove extra space */
+  width: 100%; /* Set width to 100% */
+  display: inline-block;
+  color: #FF3838;
+  -webkit-text-stroke-color: #FF3838;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  white-space: nowrap;
+}
+
+.full-width-slider {
+  width: 100%; /* Fallback for browsers that do not support CSS variables */
+  width: 100vw; /* Set width to 100vw for full viewport width */
+}
+
+@media  (max-width: 425px) {
+  .slidertitle {
+    white-space: inherit;
+    font-size: 30px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media(max-width:1080px){
+  .slidertitle {
+    font-size: 45px; /* Decrease font size for smaller screens */
+  }
+}

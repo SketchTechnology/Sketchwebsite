@@ -1,0 +1,43 @@
+.bi-title-waterprint h2 {
+    opacity: 0.5;
+    font-size: 200px;
+    font-weight: 700;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.28)), to(rgba(27, 28, 53, 0.44)));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0, #005e64 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 991px) {
+    .bi-why-choose-img1-area {
+        max-width: 550px;
+    }
+}
+.bi-why-choose-img1-area .why-choose-img3 {
+    top: -50px;
+    left: 0px;
+    z-index: -2;
+}
+.bi-why-choose-img1-area  img {
+    height: 100%;
+    width: 100%;
+}
+.why-choose-img1 img{
+    height: 550px;
+    /* width: 100%; */
+    height: 500px;
+}
+.bi-why-choose-img1-area {
+    margin: 0 auto;
+    max-width: 720px;
+}
+
+@media(max-width:768px){
+   
+    .bi-title-waterprint h2{
+        line-height: 110px;
+        font-size: 100px;
+    }
+
+}

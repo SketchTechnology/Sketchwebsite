@@ -1,0 +1,17 @@
+.langDropDown,.dropdown{
+  position: fixed !important;
+  right: 0px !important;
+  top: 10px !important;
+  border-radius: 50% !important;
+  width: 50px !important;
+  height: 50px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.btn{
+  padding: 5px !important;
+  background-color: black !important;
+  border: none !important;
+}

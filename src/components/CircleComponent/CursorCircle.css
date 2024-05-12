@@ -1,0 +1,10 @@
+.cursor-circle {
+    position: fixed;
+    background-color: rgba(0,0,0,0.4); /* Adjust color and opacity as needed */
+    border-radius: 50%;
+    pointer-events: none; /* Ensures the circle doesn't interfere with mouse events */
+    z-index: 9999; /* Ensure the circle is above other elements */
+    transform: translate(-50%, -50%);
+    transition: 0.2s !important;
+  }
+  

@@ -1,0 +1,21 @@
+.subTitle{
+    color: #FF3838 !important;
+    font-weight: 100 !important;
+}
+.subTitle+span{
+    width: 50px;
+    background-color: #FF3838;
+    height: 1px;
+}
+.mainTitle{
+    color: var(--main-Color) !important;
+    font-size: 60px;
+}
+@media(max-width:768px){
+   .mainTitle{
+
+
+       font-size: 20px;
+   }
+    
+}
