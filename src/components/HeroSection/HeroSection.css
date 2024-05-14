@@ -2,6 +2,30 @@
     background: radial-gradient(rgba(255,0,0,0.1),rgba(255,255,255,0.3));
     
 }
+.HeroSectionParent .img{
+    position: absolute;
+    z-index: -1;
+}
+.imgOne{
+    left: -10%;
+    top: 20%;
+}
+.imgTwo{
+    left: -10%;
+    top: 57%;
+}
+.imgThree{
+    left: -20%;
+    top: 80%;
+}
+.imgFour{
+    right: -10%;
+    top: 15%;
+}
+.imgFive{
+    right: 0%;
+    top: 60%;
+}
 h1 {
     -webkit-text-stroke-color: transparent;
     -webkit-text-fill-color: transparent;
@@ -56,5 +80,8 @@ h1 strong {
     h1 strong {
         line-height: 100px;
         font-size: 110px;
+    }
+    .img{
+        display: none;
     }
 }

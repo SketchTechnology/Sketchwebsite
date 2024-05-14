@@ -1,5 +1,5 @@
 import LazyLoadingImage from "../LazyLoadingImg/LazyLoadingImg";
-import personImg from "../../assets/img/sectorImage.png";
+import personImg from "../../assets/img/about/whc1.png";
 import sector1 from "../../assets/img/about/wh1.3.png";
 import sector2 from "../../assets/img/about/wh1.4.png";
 import sector3 from "../../assets/img/about/wh3.1.png";
@@ -8,7 +8,6 @@ import Titles from "../Titles/Titles";
 import AboutCard from "../AboutCompany/AboutCard";
 import { useEffect } from "react";
 const WhyChooseUs = () => {
-  
   const content = [
     {
       title: "Responsive Design",
@@ -37,9 +36,7 @@ const WhyChooseUs = () => {
         sector.style.transform = `translateY(${yPos}px)`;
       });
     };
-
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

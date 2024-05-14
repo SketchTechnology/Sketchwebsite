@@ -11,11 +11,9 @@
   background: linear-gradient(135deg, #eb5c18 0, #f95055 45.72%, #ca2db8 100%);
   width: 50% !important;
   border-radius: 25px;
- margin: 20px 0 !important; 
- border: none !important;
+  margin: 20px 0 !important; 
+  border: none !important;
 }
-
-
 .bi-pricing-item-4 {
   max-width: 405px;
   background: #202139;
@@ -28,14 +26,7 @@
   position: relative;
   top: 50px;
   left: -20px;
-  z-index: -1;
-  /* position: absolute; */
-  /* top: 50%; */
-  /* right:0px; */
-  /* -webkit-transform: translate(0, -50%) scale(0.88);
-  -khtml-transform: translate(0, -50%) scale(0.88);
-  transform: translate(0, -50%) scale(0.88);
-  z-index: -1; */
+  z-index: -1;/
 }
 .bi-pricing-item-4 .plan-title {
   color: #fff;
@@ -68,10 +59,7 @@
   background-clip: text;
   justify-content: center;
   align-items: center;
- 
 }
-
-
 .bi-pricing-item-4{
   padding:  0 !important;
 }
@@ -79,13 +67,24 @@
   transform: scale(1.1);
 }
 @media(max-width:768px){
-  /* .bi-pricing{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .bi-pricing-plan-content-4 .bi-pricing-item-4:nth-child(2){
+    top: 0;
+    left: 0;
+    z-index: 1;/
   }
-  #root > div > div:nth-child(3) > div.PriceParent.mx-auto.my-5 > div.bi-pricing-plan-content-4.position-relative > div.bi-pricing-item-4.text-center.price-last-item{
-      position: initial;
-  } */
+  .bi-pricing-plan-content-4{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .bi-pricing-item-4{
+    width: 320px;
+  }
+  ul {
+    padding: 0 !important;
+  }
+
+}
+.PriceParent{
+  margin: 100px auto !important;
 }

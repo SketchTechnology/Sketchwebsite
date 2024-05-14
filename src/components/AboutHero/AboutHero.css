@@ -1,0 +1,6 @@
+.HeroParent{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../../assets//img//bg/bread-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+}

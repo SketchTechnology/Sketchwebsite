@@ -1,0 +1,9 @@
+.modal-header .btn-close{
+    font-size: 15px !important;
+}
+.ModalTitle{
+    color: var(--main-Color) !important;
+}
+.modal-dialog{
+    width: 700px !important;
+}

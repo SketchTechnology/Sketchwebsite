@@ -1,0 +1,189 @@
+.CreativeAgencParent{
+     padding: 100px 0;
+/* background-color: white; */
+}
+.headings h6 {
+    color: var(--main-Color) !important;
+    position: relative;
+    font-size: 40px;
+}
+.headings h6::before{
+    left: -16px;
+    top: 5px;
+    width: 12px;
+    content: "";
+    height: 12px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #0e0e0e;
+    
+}
+.headings h6::after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -10px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: var(--main-Color);
+
+}
+.headings h2 {
+    font-size: 80px;
+    text-align: center;
+}
+@media(max-width:425px){
+    .headings h2 {
+        font-size: 40px;
+    }
+    .headings h6{
+        font-size: 20px;
+    }
+}
+.CreativeAgencParent img {
+    object-fit: cover !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.badgeimg{
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.badgeimg img:hover{
+animation: aniamteHover backwards 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+.badgeimg:hover::after{
+    background-color: var(--main-Color) !important;
+    transition: 0.2s;
+}
+@keyframes aniamteHover {
+    0% {
+        filter: blur(0px);
+        transform: scale(1.2);
+    }
+    100%{
+        filter:blur(5px)
+    }
+}
+.badgeimg::after{
+    transform: rotate(45deg);
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    transition: 0.2s;
+
+    right: -50px;
+    width: 90px;
+    height: 100px;
+    background-color: white;
+}
+.bi-blog-content-2, .bi-blog-feed-content-2, .bi-career-content, .bi-career-feed-content, .bi-faq-feed-content, .bi-fun-fact-counter, .bi-key-feature-title-text, .bi-portfolio-tab-content, .bi-pricing-content-3, .bi-team-content-4, .bi-testimonial-feed-content, .bi-testimonial-slider-4, .bi-why-choose-us-content, .hap-blog-content, .hpt-service-2-tabs, .inv-demo-page-content, .inv-lan-faq-feature, .pt-50{
+    padding-top: 50px;
+}
+.bi-counter-item {
+    max-width: 330px;
+    margin: 0 auto;
+}
+.bi-counter-item:before {
+    top: 43%;
+    opacity: .5;
+    height: 16px;
+    -webkit-transform: translate(-50%) rotate(-45deg);
+    transform: translate(-50%) rotate(-45deg);
+}
+.bi-counter-item:after, .bi-counter-item:before {
+    left: 48%;
+    width: 1px;
+    background: var(--main-Color);
+    position: absolute;
+    content: "";
+}
+.bi-counter-item:after {
+    top: 20%;
+    height: 60px;
+    -webkit-transform: translate(-50%) rotate(45deg);
+    transform: translate(-50%) rotate(45deg);
+}
+.bi-counter-item:after, .bi-counter-item:before {
+    left: 48%;
+    width: 1px;
+    background: var(--main-Color);
+    position: absolute;
+    content: "";
+}
+.counter,.counter span{
+    color: black !important;
+    font-size: 80px;
+}
+.button2 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  }
+  
+  .button2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  }
+  
+  .button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #009087;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:hover {
+    color: #ffffff !important;
+    border: 1px solid #009087;
+  }
+  
+  .button2:hover:before {
+    top: -35%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .button2:hover:after {
+    top: -45%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  

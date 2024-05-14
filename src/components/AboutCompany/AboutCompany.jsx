@@ -7,6 +7,7 @@ import Aos from "aos";
 import img1 from '../../assets/img/about/ab1.png'
 import img2 from '../../assets/img/about/ab2.png'
 import LazyLoadingImage from "../LazyLoadingImg/LazyLoadingImg";
+import MainBtn from "../Buttons/MainBtn";
 const AboutCompany = () => {
   const content = [
     {
@@ -74,8 +75,21 @@ const AboutCompany = () => {
                   dolorum asperiores officiis.
                 </p>
                 <div data-aos="fade-left">
-
                 <AboutCard content={content} />
+                <div className="d-flex  justify-content-between flex-column gap-2 flex-md-row">
+                <MainBtn content={'Our Company'}/>
+                <div className="d-flex flex-column callUs shadow px-2 rounded bg-white">
+                  <span >
+                    
+Call Us Anytime
+                  </span>
+                  <span>
+                  0215 6856 9875
+
+                  </span>
+                </div>
+                </div>
+           
                 </div>
               </div>
             </div>

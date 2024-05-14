@@ -72,3 +72,6 @@ width: 100% !important;
         height: 100%;
     }
 }
+.callUs span{
+    color:var(--main-Color) !important
+}

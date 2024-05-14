@@ -20,7 +20,7 @@ const ImageSlider = () => {
             <h5>UiUx</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet? Est reprehenderit, ducimus ut inventore impedit blanditiis doloremque suscipit sed.</p>
             <button className="button">
-  Let`s go →
+ →
 </button>
             <LazyLoadingImage
               src={
@@ -36,7 +36,7 @@ const ImageSlider = () => {
             <h5>Web Development</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet? Est reprehenderit, ducimus ut inventore impedit blanditiis doloremque suscipit sed.</p>
             <button className="button">
-  Let`s go →
+   →
 </button>
           <LazyLoadingImage
             src={
@@ -51,8 +51,8 @@ const ImageSlider = () => {
         <div className="badgeImage">
             <h5>Mobile Apps</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet? Est reprehenderit, ducimus ut inventore impedit blanditiis doloremque suscipit sed.</p>
-            <button className="button">
-  Let`s go →
+            <button className="button px-1">
+   →
 </button>
           <LazyLoadingImage
             src={
@@ -67,8 +67,8 @@ const ImageSlider = () => {
         <div className="badgeImage">
             <h5>UiUx</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet? Est reprehenderit, ducimus ut inventore impedit blanditiis doloremque suscipit sed.</p>
-            <button className="button">
-  Let`s go →
+            <button className="button px-1">
+   →
 </button>
           <LazyLoadingImage
             src={
@@ -83,8 +83,8 @@ const ImageSlider = () => {
         <div className="badgeImage">
             <h5>Web Development</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet? Est reprehenderit, ducimus ut inventore impedit blanditiis doloremque suscipit sed.</p>
-            <button className="button">
-  Let`s go →
+            <button className="button px-1">
+   →
 </button>
           <LazyLoadingImage
             src={
@@ -99,8 +99,8 @@ const ImageSlider = () => {
         <div className="badgeImage">
             <h5>Mobile Apps</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet? Est reprehenderit, ducimus ut inventore impedit blanditiis doloremque suscipit sed.</p>
-            <button className="button">
-  Let`s go →
+            <button className="button px-1">
+  →
 </button>
           <LazyLoadingImage
             src={

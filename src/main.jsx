@@ -21,7 +21,7 @@ const RouterStructure = () => {
       router={createBrowserRouter(
         createRoutesFromElements(
           <Route path="/" element={<RootLayout />}>
-            
+       
             <Route path="/" index element={<App />} />
             <Route path="AboutUs" index element={<AboutUs/>} />
           </Route>

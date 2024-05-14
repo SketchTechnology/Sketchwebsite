@@ -5,7 +5,7 @@ const TitleSlider = () => {
     return (
         <div className="full-width-slider my-5"> {/* Wrapper div for full width */}
             <Slider
-                 width="150vw"
+                 width="120vw"
                  duration={40}
                  toRight={false}
                  pauseOnHover={false}
@@ -14,6 +14,9 @@ const TitleSlider = () => {
             >
                 <Slider.Slide>
                     <h2 className='slidertitle '>Sketch Digital Marketing Agency</h2>
+                </Slider.Slide>
+                <Slider.Slide>
+                    <h2 className='slidertitle'>Sketch Digital Marketing Agency</h2>
                 </Slider.Slide>
                 <Slider.Slide>
                     <h2 className='slidertitle'>Sketch Digital Marketing Agency</h2>

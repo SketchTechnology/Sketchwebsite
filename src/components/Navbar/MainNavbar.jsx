@@ -61,8 +61,11 @@ const MainNavbar = () => {
       <span onClick={toggleNavbar} className='collapseBtn' ><i className="fa-solid fa-bars text-white  "></i></span> 
       
       <Navbar.Collapse id="responsive-navbar-nav" className={`justify-content-end ${reachedEnd&&' miniNav'} `}>
-          <Nav >
-          <Nav.Link href="#features">{t("navigation.home")}</Nav.Link>
+          <Nav  >
+            <Link className='nav-link' to={'/'}>
+          {t("navigation.home")}
+
+            </Link>
           <Link className='nav-link' to={'AboutUs'}>About</Link>
           <Nav.Link href="#about">Service</Nav.Link>
           <Nav.Link href="#about">Team</Nav.Link>

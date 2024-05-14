@@ -1,6 +1,5 @@
 
 const AboutCard = ({content}) => {
-  console.log(content)
   return (
     <div className="bi-abut-feature-list-4 ul-li  fadeInUp my-4">
       <ul className='row flex-wrap justify-content-center align-items-center p-0'>

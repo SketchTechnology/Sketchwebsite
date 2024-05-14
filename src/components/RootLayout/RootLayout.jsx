@@ -1,11 +1,11 @@
 import MainNavbar from '../Navbar/MainNavbar'
 import { Outlet } from 'react-router'
 import { I18nextProvider, useTranslation } from 'react-i18next';
-import i18n from "i18next";
 import LanguageDropdown from '../LangComponent/LanguageDropdown';
 import { useEffect } from 'react';
 import CursorCircle from '../CircleComponent/CircleComponent';
 import Footer from '../Footer/Footer';
+import FormModal from '../Modal/FormModal';
 
 const RootLayout = () => {
   const { i18n } = useTranslation();
@@ -23,6 +23,7 @@ const RootLayout = () => {
       <LanguageDropdown/>
       <CursorCircle/>
       <Footer/>
+      <FormModal/>
        </I18nextProvider>
     </div>
   )

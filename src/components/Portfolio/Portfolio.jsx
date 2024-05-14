@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import './Portfolio.css';
-import img from '../../assets/img/about/scroll-imgThree.png';
+import img from '../../assets/img/about/scrolImgnew.png';
 import LazyLoadingImage from '../LazyLoadingImg/LazyLoadingImg';
 
 const Portfolio = () => {
