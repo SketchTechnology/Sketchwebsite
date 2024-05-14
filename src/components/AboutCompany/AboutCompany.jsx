@@ -4,7 +4,8 @@ import AboutCard from "./AboutCard";
 import "./AboutCompany.css";
 import "aos/dist/aos.css";
 import Aos from "aos";
-import TitleSlider from "../TitleSlider/TitleSlider";
+import img1 from '../../assets/img/about/ab1.png'
+import img2 from '../../assets/img/about/ab2.png'
 import LazyLoadingImage from "../LazyLoadingImg/LazyLoadingImg";
 const AboutCompany = () => {
   const content = [
@@ -45,16 +46,12 @@ const AboutCompany = () => {
               </span>
               <div className="about-img1 wow "  data-aos="fade-up"
                 >
-                <img
-                  src="https://sketchtechnology.github.io/digitalAgency/sketch/assets/img/about/ab1.png"
-                  alt="" 
-                
-                />
+                <LazyLoadingImage src={img1} alt={'userOne'} height={'450px'}/>
                 
               </div>
               <div className="about-img2 mt-3  wow "  data-aos="fade-right"
                 >
-                        <LazyLoadingImage src={"https://sketchtechnology.github.io/digitalAgency/sketch/assets/img/about/ab2.png"} alt={'person'}/>
+                        <LazyLoadingImage src={img2} height={'350px'} alt={'person'}/>
 
               
               </div>
@@ -85,7 +82,6 @@ const AboutCompany = () => {
           </div>
         </div>
       </div>
-      <TitleSlider/>
     </div>
   );
 };

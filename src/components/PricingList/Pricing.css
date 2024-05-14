@@ -1,0 +1,91 @@
+.bi-pricing-plan-content-4 {
+  z-index: 1;
+  display: flex; 
+  justify-content: center;
+}
+.bi-pricing-plan-content-4 .bi-pricing-item-4, .home-6 .button, .home-6 a, .home-6 button, .hpt-hero-2-social li a i {
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.bi-blog-item-4:before, .bi-pricing-item-4 .price-btn button {
+  background: linear-gradient(135deg, #eb5c18 0, #f95055 45.72%, #ca2db8 100%);
+  width: 50% !important;
+  border-radius: 25px;
+ margin: 20px 0 !important; 
+ border: none !important;
+}
+
+
+.bi-pricing-item-4 {
+  max-width: 405px;
+  background: #202139;
+  border-radius: 20px;
+  padding-bottom: 50px;
+  -webkit-box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.25) inset;
+}
+.bi-pricing-plan-content-4 .bi-pricing-item-4:nth-child(2) {
+  position: relative;
+  top: 50px;
+  left: -20px;
+  z-index: -1;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* right:0px; */
+  /* -webkit-transform: translate(0, -50%) scale(0.88);
+  -khtml-transform: translate(0, -50%) scale(0.88);
+  transform: translate(0, -50%) scale(0.88);
+  z-index: -1; */
+}
+.bi-pricing-item-4 .plan-title {
+  color: #fff;
+  margin: 0 auto 40px;
+  font-size: 20px;
+  overflow: hidden;
+  font-weight: 600;
+  padding: 18px 0;
+  position: relative;
+  font-family: var(--heading);
+  border-radius: 0 0 20px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  -webkit-box-shadow: 0 1px 0 0 rgba(255, 56, 56, 0.5);
+  box-shadow: 0 1px 0 0 rgba(255, 56, 56, 0.5);
+}
+.bi-about-img-area1 .bi-about-img-text, .bi-blog-details-meta, .bi-key-feature-item .bi-key-feature-icon-number, .bi-pricing-item-4 .plan-price, .mb-35 {
+  margin-bottom: 35px;
+}
+.bi-pricing-item-4 .plan-list {
+  padding: 32px 70px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.bi-pricing-item-4 .price-btn, .bi-team-pagination-carousel, .coming-soon-socail, .hap-pricing-list-area .hap-btn, .mt-50 {
+  margin-top: 50px;
+}
+.bi-pricing-item-4 .plan-price h3 {
+  font-size: 68px;
+  font-weight: 700;
+  display: flex;
+  background-clip: text;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+.bi-pricing-item-4{
+  padding:  0 !important;
+}
+.bi-pricing-item-4:hover{
+  transform: scale(1.1);
+}
+@media(max-width:768px){
+  /* .bi-pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #root > div > div:nth-child(3) > div.PriceParent.mx-auto.my-5 > div.bi-pricing-plan-content-4.position-relative > div.bi-pricing-item-4.text-center.price-last-item{
+      position: initial;
+  } */
+}

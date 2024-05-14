@@ -41,3 +41,39 @@
     }
 
 }
+.floatingSector,.floatingSectorTwo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.floatingSector{
+    top: 100px;
+    z-index: 3;
+    right: 0;
+}
+.floatingSectorTwo{
+    bottom: 100px;
+    z-index: 3;
+    left: 0;
+}
+.floatingSectorThree{
+    top: 25px;
+    z-index: -1;
+}
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+
+  
+   .floatingSectorThree,.floatingSector,.floatingSectorTwo {
+    animation: floating 3s infinite;
+  }
+  
+  
+  
+  
+  
+  
+  

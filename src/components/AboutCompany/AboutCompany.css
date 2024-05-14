@@ -2,7 +2,7 @@
     padding-bottom: 175px;
 }
 .bi-about-img-wrapper4 .about-circle-shape {
-    left: -80px;
+    left: 50px;
     z-index: -1;
     bottom: 80px;
 }
@@ -14,7 +14,7 @@
     bottom: 0;
 }
 .bi-about-text-4 .bi-section-title-4{
-    right: 10% ; 
+    right: 0% ; 
     top: 35px;
     width: 700px;
     position: absolute;

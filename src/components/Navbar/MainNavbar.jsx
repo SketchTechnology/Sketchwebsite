@@ -2,6 +2,7 @@ import  { useEffect, useRef, useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import CollapseNavbar from './CollapseNavbar';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const MainNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -34,7 +35,6 @@ const MainNavbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  console.log(reachedEnd,'reachedEnd')
   
   // Empty dependency array to run this effect only once
   return (
@@ -63,7 +63,7 @@ const MainNavbar = () => {
       <Navbar.Collapse id="responsive-navbar-nav" className={`justify-content-end ${reachedEnd&&' miniNav'} `}>
           <Nav >
           <Nav.Link href="#features">{t("navigation.home")}</Nav.Link>
-          <Nav.Link href="#pricing">About</Nav.Link>
+          <Link className='nav-link' to={'AboutUs'}>About</Link>
           <Nav.Link href="#about">Service</Nav.Link>
           <Nav.Link href="#about">Team</Nav.Link>
           <Nav.Link href="#about">Portfolio</Nav.Link>

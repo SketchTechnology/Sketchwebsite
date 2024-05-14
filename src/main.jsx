@@ -12,13 +12,9 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import RootLayout from "./components/RootLayout/RootLayout.jsx";
+import AboutUs from "./pages/AboutUs/AboutUs.jsx";
 const RouterStructure = () => {
-  function delayForDemo(promise) {
-    return new Promise((resolve) => {
-      setTimeout(resolve, 1000);
-    }).then(() => promise);
-  }
-  let HomeLazy = lazy(() => delayForDemo(import("./App.jsx")));
+  
   return (
    
     <RouterProvider
@@ -27,6 +23,7 @@ const RouterStructure = () => {
           <Route path="/" element={<RootLayout />}>
             
             <Route path="/" index element={<App />} />
+            <Route path="AboutUs" index element={<AboutUs/>} />
           </Route>
         )
       )}

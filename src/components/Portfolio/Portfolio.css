@@ -1,0 +1,10 @@
+.portfolioImg  {
+    height: 300px;
+    z-index: -1;
+    transform: scale(1.8);
+    transition: 0.2s;
+}
+.portfolioImg .lazyload-wrapper{
+    width: 100%;
+    height: 100%;
+}

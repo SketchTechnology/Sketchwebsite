@@ -1,0 +1,63 @@
+.badgeImage{
+    position: relative;
+    
+    overflow: hidden;
+    border-radius: 20px;
+}
+.badgeImage h5{
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    bottom: 0;
+    
+}
+.badgeImage:hover h5{
+    height: 100%;
+}
+.badgeImage:hover p{
+    top: 50%;
+}
+.badgeImage:hover .button{
+    bottom:  5px;
+}
+.button {
+    --font-color: #111;
+    --bg-color: #fefefe;
+    --main-color: #111;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color) !important;
+    box-shadow: 4px 4px var(--main-color) !important;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color) !important;
+    cursor: pointer;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.button:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+}
+
+.badgeImage p {
+    width: 100% !important;
+      transform: translateY(-50%);
+    position: absolute;
+    top: 150%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: white !important;
+  }
+ 
