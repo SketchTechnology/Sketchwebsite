@@ -3,7 +3,9 @@ import "./OurExpertTeam.css";
 import userOne from "../../assets/img/team/tm1.png";
 import userTwo from "../../assets/img/team/tm2.png";
 import MemberCard from "../MemberCard/MemberCard";
+import { useTranslation } from "react-i18next";
 const OurExpertTeam = () => {
+  const {t} =useTranslation()
     const Members = [
         {
             name:'heba',
@@ -26,7 +28,7 @@ const OurExpertTeam = () => {
         <div className="titleMain d-flex gap-2 justify-content-center align-items-center">
 
         <span></span>
-      <p className="TeamTitle">Our Expert Team</p>
+      <p className="TeamTitle">{t('OurExpertTeam')}</p>
       <span></span>
         </div>
       <div className="container mx-auto gap-3 d-flex  flex-wrap justify-content-center ">

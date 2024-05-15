@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import './HeroSection.css';
 import Aos from 'aos';
 import img1 from '../../assets/img/slider/bn1.png';
@@ -6,11 +6,13 @@ import img2 from '../../assets/img/slider/bn2.png';
 import img3 from '../../assets/img/slider/bn3.png';
 import img4 from '../../assets/img/slider/bn4.png';
 import img5 from '../../assets/img/slider/bn5.png';
+import { useTranslation } from 'react-i18next';
 
 const HeroSections = () => {
   useEffect(() => {
     Aos.init({ once: true });
   }, []);
+  const {t} = useTranslation()
 
   const handleMouseMove = (e) => {
     const imgs = document.querySelectorAll('.img');
@@ -33,19 +35,19 @@ const HeroSections = () => {
   return (
     <div className="HeroSectionParent" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
       <div className="container container-md-fluid mx-auto d-flex flex-column align-items-center position-relative text-center">
-        <div className="imgOne img">
+        <div className="imgOne img" data-aos="zoom-in" data-aos-delay="200" >
           <img src={img1} alt="" />
         </div>
-        <div className="imgTwo img">
+        <div className="imgTwo img" data-aos="zoom-out" data-aos-delay="400" >
           <img src={img2} alt="" />
         </div>
-        <div className="imgThree img">
+        <div className="imgThree img" data-aos="zoom-in" data-aos-delay="600" >
           <img src={img3} alt="" />
         </div>
-        <div className="imgFour img">
+        <div className="imgFour img" data-aos="zoom-in" data-aos-delay="800" > 
           <img src={img4} alt="" />
         </div>
-        <div className="imgFive img">
+        <div className="imgFive img" data-aos="zoom-in" data-aos-delay="900" >
           <img src={img5} alt="" />
         </div>
         <div className="d-flex justify-content-center flex-wrap flex-column flex-md-row align-items-center">
@@ -62,8 +64,7 @@ const HeroSections = () => {
           </h1>
         </div>
         <p data-aos="fade-up" data-aos-delay="1600">
-          Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iure eaque quibusdam enim deserunt deleniti at hic impedit. Nobis voluptates nesciunt libero inventore sint
-          voluptatem blanditiis nisi
+        {t('HomeContent')}
         </p>
       </div>
       <div style={{ overflow: 'hidden' }}>

@@ -4,7 +4,7 @@ const Titles = ({maintitle,secondtitle}) => {
   return (
     <div className='container p-0 p-md-2'>
       <div className="d-flex align-items-center">
-      <h5 className='subTitle '>
+      <h5 className='subTitle mx-2 '>
         {secondtitle}
       </h5>
       <span></span>

@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "host":"vite --host"
+    "host": "vite --host"
   },
   "dependencies": {
     "aos": "^2.3.4",
@@ -18,6 +18,7 @@
     "i18next-browser-languagedetector": "^7.2.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
+    "react-bootstrap-sidebar-menu": "^2.0.3",
     "react-dom": "^18.2.0",
     "react-i18next": "^14.1.1",
     "react-infinite-logo-slider": "^1.0.13",
@@ -34,6 +35,7 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "sass": "^1.77.1",
     "vite": "^5.2.0"
   }
 }

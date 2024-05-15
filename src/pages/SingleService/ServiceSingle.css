@@ -1,0 +1,29 @@
+.serviceImg{
+    height: 350px;
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+.serviceImg:hover.serviceImg img{
+    transform: scale(1.2);
+}
+.serviceImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.SingleServTitle > p{
+    color: black !important;
+    font-size: 50px;
+
+    width:100% !important
+}
+.SingleServTitle{
+    margin: 20px 0 !important;
+    width: 100%;
+}
+.bi-service-details-text-area .bi-sd-feature {
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: #f3f4f4;
+}

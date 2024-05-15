@@ -1,6 +1,6 @@
 import "./VissionAndMission.css";
 import img1 from "../../assets/img/portfolio/pro2.jpg";
-import img2 from "../../assets/img/portfolio/pro1.jpg";
+import img2 from "../../assets/img/portfolio/port3.jpg";
 const VissionAndMission = () => {
   return (
     <div className="CreativeAgencParent  ">
@@ -30,7 +30,7 @@ const VissionAndMission = () => {
             <p className="text-center mt-2">Imagine your brand's narrative brought to life in pixels, engaging content that captivates your audience, and campaigns that resonate across the digital spectrum that's the </p>
           </div>
         </div>
-        <div className="row ">
+        <div className="row   ">
           <div className="col-12 col-md-5  p-3">
             <h4 className="text-dark missions">
             MISSION
@@ -42,8 +42,8 @@ const VissionAndMission = () => {
                         <p>Our mission is to deliver exceptional results-driven solutions that maximize our client's online presence</p>
 
           </div>
-          <div className="col-12 col-md-7 h-100 overflow-hidden p-0 rounded-4">
-            <img src={img2} alt="partners" width={"100%"}  style={{objectFit:'contain'}} height={'100%'}/>
+          <div className="col-12 col-md-7 h-100 overflow-hidden  p-0 rounded-4">
+            <img src={img2} alt="partners" width={"100%"}  style={{objectFit:'contain'}} height={'200px !important'}/>
           </div>
         </div>
       </div>

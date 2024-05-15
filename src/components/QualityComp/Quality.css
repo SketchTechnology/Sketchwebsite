@@ -1,0 +1,143 @@
+.bi-service-feed-item {
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 70px 30px 45px;
+    background: rgba(14, 14, 14, .01999);
+}
+.bi-service-feed-item:before {
+    width: 0;
+    height: 0;
+    bottom: 0;
+    z-index: -1;
+    left: -50px;
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-bottom: 300px solid rgba(255, 56, 56, .3);
+    border-right: 390px solid transparent;
+}
+.bi-service-feed-item .hover_img {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -2; 
+    width: 100%;
+    height: 100%;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.bi-service-feed-item .hover_img {
+-webkit-filter: grayscale(1);
+filter: grayscale(1);
+ background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/dc/BrownSpiderMonkey_%28edit2%29.jpg');
+ background-position: center; 
+ background-size: cover;
+}
+.bi-service-feed-item:hover.bi-service-feed-item .hover_img{
+    opacity: 1 !important;
+
+}
+.bi-service-feed-item:hover.bi-service-feed-item .hover_img:before{
+    left: -150px;
+z-index: -1;
+opacity: 1;
+}
+.bi-service-feed-item:hover .serviceTitle{
+   color: white !important;
+}
+.bi-service-feed-item:hover .servicePara{
+   color: white !important;
+}
+.bi-service-feed-item .hover_img:before {
+    bottom: -10px;
+    -webkit-filter: grayscale(100) !important;
+    filter: grayscale(0) !important;
+    left: -600px;
+    width: 300px;
+    content: "";
+    transition: 0.5s;
+    opacity: 0;
+    height: 300px;
+    position: absolute;
+    transform: rotate(45deg);
+   background-color: var(--main-Color) !important;
+}
+.Qualitybg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bi-service-feed-item .serial-number {
+    top: 0px;
+    right: 20px;
+    color: #000000 !important;
+    font-size: 70px;
+    font-weight: 700;
+    opacity: .3;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000 !important;
+}
+.bi-service-feed-item .service-icon {
+    z-index: 1;
+    margin-bottom: 15px;
+}
+.bi-service-feed-item .service-icon:before {
+    z-index: -1;
+    top: -10px;
+    left: -10px;
+    width: 68px;
+    content: "";
+    height: 68px;
+    position: absolute;
+    border-radius: 100%;
+    opacity: .0500000007;
+    background-color: var(--main-color);
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.bi-service-feed-item .service-icon i {
+    font-size: 70px;
+    line-height: .75;
+    color: var(--main-color);
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_aina !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (max-width: 680px) {
+    .bi-service-feed-item .service-text h3 {
+        font-size: 26px;
+    }
+}
+.bi-service-feed-item .service-text p {
+    color: #555;
+    font-size: 16px;
+    padding-bottom: 25px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.bi-service-feed-item .service-text .read_more {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    color: var(--base-color);
+    background-color: rgba(255, 56, 56, .05);
+}
+.read_more{
+    background-color: var(--main-Color) !important;
+}

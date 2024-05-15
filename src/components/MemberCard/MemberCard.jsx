@@ -13,11 +13,7 @@ const MemberCard = ({member}) => {
         <p className="role">{member.prof}</p>
       </div>
       <div className="socialDiv rounded-4   d-flex justify-content-center align-items-end">
-      <i className="fa-solid fa-at socials text-dark w-100  text-center fs-2 "></i>
-
-      
-
-       
+      <i className="fa-solid fa-at socials text-dark w-100  text-center fs-2 "></i>       
       </div>
     </div>
   </div>

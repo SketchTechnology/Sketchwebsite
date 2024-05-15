@@ -8,25 +8,29 @@ import img1 from '../../assets/img/about/ab1.png'
 import img2 from '../../assets/img/about/ab2.png'
 import LazyLoadingImage from "../LazyLoadingImg/LazyLoadingImg";
 import MainBtn from "../Buttons/MainBtn";
+import { useTranslation } from "react-i18next";
 const AboutCompany = () => {
+  const {t} = useTranslation()
+
   const content = [
     {
       icon:'fa-solid fa-users',
-      title:"Dedicated Team"
+      title:`${t('CreativeTeam')}`
     },
     {
       icon:'fa-solid fa-cogs',
-      title:"Clean Setup"
+      title:`${t('ManagementSystem')}`
     },
     {
       icon:'fa-solid fa-headset',
-      title:"24/7  Support"
+      title:`${t('24/5_Support')}`
     },
     {
       icon:'fa-solid fa-award',
-      title:"Winning Award"
+      title:`${t('HighQuality')}`
     },
   ]
+
   useEffect(() => {
     Aos.init({
       delay:1000,
@@ -61,31 +65,27 @@ const AboutCompany = () => {
           <div className="col-lg-5 ">
             <div className="bi-about-text-4 position-relative">
               <div className="bi-section-title-4 headline" data-aos="zoom-in">
-                <Titles secondtitle={'ABOUT COMPANY'} maintitle={'We Provide Best Design Solution in City'}  />
+                <Titles secondtitle={t('AboutCompany')} maintitle={t('AboutcompanyTitle')}  />
               </div>
               <div
                 className="bi-about-text-area-4 bins-text"
                
               >
                 <p data-aos="fade-up">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Pariatur ea temporibus ex culpa magni ut blanditiis aliquam
-                  veritatis maxime necessitatibus autem veniam cupiditate
-                  voluptate laudantium quos quo incidunt fuga sit? Explicabo
-                  dolorum asperiores officiis.
+                  {t('AboutCompanyParagraph')}
                 </p>
                 <div data-aos="fade-left">
                 <AboutCard content={content} />
-                <div className="d-flex  justify-content-between flex-column gap-2 flex-md-row">
-                <MainBtn content={'Our Company'}/>
+                <div className="d-flex  justify-content-center flex-column gap-2 flex-md-row flex-wrap">
+                <MainBtn content={t('ContactUsBtn')}/>
                 <div className="d-flex flex-column callUs shadow px-2 rounded bg-white">
-                  <span >
-                    
-Call Us Anytime
+                  <span className="text-center" >
+                    {t('AboutUsBtn')}
+
                   </span>
                   <span>
-                  0215 6856 9875
 
++971 56 409 3626
                   </span>
                 </div>
                 </div>

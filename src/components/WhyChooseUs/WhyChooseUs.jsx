@@ -7,22 +7,24 @@ import "./WhyChooseUs.css";
 import Titles from "../Titles/Titles";
 import AboutCard from "../AboutCompany/AboutCard";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 const WhyChooseUs = () => {
+  const {t}=useTranslation()
   const content = [
     {
-      title: "Responsive Design",
+      title:t('ExpressiveDesign'),
       icon: "fa-solid fa-pen-nib",
     },
     {
-      title: "Productive Software    ",
+      title: t('ProductivitySoftware'),
       icon: "fa-brands fa-product-hunt",
     },
     {
-      title: "Quality Product",
+      title: t('CreativeContent'),
       icon: "fa-regular fa-star",
     },
     {
-      title: "24/7 Online Support",
+      title: t('24/5_Support'),
       icon: "fa-solid fa-headset",
     },
   ];
@@ -53,17 +55,13 @@ const WhyChooseUs = () => {
               <div className="">
                 <div className=" headline " data-aos="zoom-in">
                   <Titles
-                    secondtitle={"WHY CHOOSE US"}
-                    maintitle={"Experts Services to Change Business"}
+                    secondtitle={t('WhyChooseUs')}
+                    maintitle={t("WhyChooseUsTitle")}
                   />
                 </div>
                 <div className="">
                   <p data-aos="fade-up">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Pariatur ea temporibus ex culpa magni ut blanditiis aliquam
-                    veritatis maxime necessitatibus autem veniam cupiditate
-                    voluptate laudantium quos quo incidunt fuga sit? Explicabo
-                    dolorum asperiores officiis.
+                 {t("WhyChooseUsBaragraph")}
                   </p>
                   <div data-aos="fade-left">
                     <AboutCard content={content} />

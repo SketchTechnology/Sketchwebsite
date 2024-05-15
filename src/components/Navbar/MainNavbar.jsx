@@ -63,14 +63,14 @@ const MainNavbar = () => {
       <Navbar.Collapse id="responsive-navbar-nav" className={`justify-content-end ${reachedEnd&&' miniNav'} `}>
           <Nav  >
             <Link className='nav-link' to={'/'}>
-          {t("navigation.home")}
+          {t("navigation.Home")}
 
             </Link>
-          <Link className='nav-link' to={'AboutUs'}>About</Link>
-          <Nav.Link href="#about">Service</Nav.Link>
-          <Nav.Link href="#about">Team</Nav.Link>
-          <Nav.Link href="#about">Portfolio</Nav.Link>
-          <Nav.Link href="#about">Blog</Nav.Link>
+          <Link className='nav-link' to={'AboutUs'}>{t("navigation.About")}</Link>
+          <Link className='nav-link' to={'Services'}>{t("navigation.Service")}</Link>
+          <Nav.Link href="#about">{t("navigation.Portoflio")}</Nav.Link>
+          <Nav.Link href="#about">{t("navigation.Blog")}</Nav.Link>
+       
           {/* Add more Nav.Link components as needed */}
         </Nav>
       </Navbar.Collapse>

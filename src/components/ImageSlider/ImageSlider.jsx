@@ -1,14 +1,19 @@
 import Slider from "react-infinite-logo-slider";
 import "./ImageSlider.css"; // Import CSS file for custom styling
 import LazyLoadingImage from "../LazyLoadingImg/LazyLoadingImg";
-
+import img1 from '../../assets/img/Cards/card-1.webp'
+import img2 from '../../assets/img/Cards/card-2.webp'
+import img3 from '../../assets/img/Cards/card-3.webp'
+import img4 from '../../assets/img/Cards/card-4.webp'
+import img5 from '../../assets/img/Cards/card-5-2.webp'
+import img6 from '../../assets/img/Cards/card-7-1.webp'
 const ImageSlider = () => {
   return (
     <div className="full-width-slider my-5">
       {" "}
       {/* Wrapper div for full width */}
       <Slider
-        width={"400px"}
+        width={"500px"}
         duration={40}
         toRight={false}
         pauseOnHover={true}
@@ -16,100 +21,64 @@ const ImageSlider = () => {
         blurBoderColor={"#fff"}
       >
         <Slider.Slide>
-          <div className="badgeImage">
-            <h5>UiUx</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet? Est reprehenderit, ducimus ut inventore impedit blanditiis doloremque suscipit sed.</p>
-            <button className="button">
- →
-</button>
+    
             <LazyLoadingImage
               src={
-                "https://sketchtechnology.github.io/digitalAgency/sketch/assets/img/service/ser1.png"
+                img1
               }
               alt={"UiUx"}
               height={"400px"}
             />
-          </div>
         </Slider.Slide>
         <Slider.Slide>
-        <div className="badgeImage">
-            <h5>Web Development</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet? Est reprehenderit, ducimus ut inventore impedit blanditiis doloremque suscipit sed.</p>
-            <button className="button">
-   →
-</button>
+     =
           <LazyLoadingImage
             src={
-              "https://sketchtechnology.github.io/digitalAgency/sketch/assets/img/service/ser2.png"
+              img2
             }
             alt={"Web Development"}
             height={"400px"}
           />
-          </div>
+       
         </Slider.Slide>
         <Slider.Slide> 
-        <div className="badgeImage">
-            <h5>Mobile Apps</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet? Est reprehenderit, ducimus ut inventore impedit blanditiis doloremque suscipit sed.</p>
-            <button className="button px-1">
-   →
-</button>
+  
           <LazyLoadingImage
             src={
-              "https://sketchtechnology.github.io/digitalAgency/sketch/assets/img/service/ser3.png"
+              img3
             }
             alt={"Mobile Apps"}
             height={"400px"}
           />
-          </div>
         </Slider.Slide>
         <Slider.Slide>
-        <div className="badgeImage">
-            <h5>UiUx</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet? Est reprehenderit, ducimus ut inventore impedit blanditiis doloremque suscipit sed.</p>
-            <button className="button px-1">
-   →
-</button>
+       
           <LazyLoadingImage
             src={
-              "https://sketchtechnology.github.io/digitalAgency/sketch/assets/img/service/ser1.png"
+              img4
             }
             alt={"UiUx"}
             height={"400px"}
           />
-          </div>
         </Slider.Slide>
         <Slider.Slide>
-        <div className="badgeImage">
-            <h5>Web Development</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet? Est reprehenderit, ducimus ut inventore impedit blanditiis doloremque suscipit sed.</p>
-            <button className="button px-1">
-   →
-</button>
+      
           <LazyLoadingImage
             src={
-              "https://sketchtechnology.github.io/digitalAgency/sketch/assets/img/service/ser2.png"
-            }
+              img5}
             alt={"Web Development"}
             height={"400px"}
           />
-          </div>
         </Slider.Slide>
         <Slider.Slide>
-        <div className="badgeImage">
-            <h5>Mobile Apps</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eveniet? Est reprehenderit, ducimus ut inventore impedit blanditiis doloremque suscipit sed.</p>
-            <button className="button px-1">
-  →
-</button>
+     
           <LazyLoadingImage
             src={
-              "https://sketchtechnology.github.io/digitalAgency/sketch/assets/img/service/ser3.png"
+              img6
             }
             alt={"Mobile Apps"}
             height={"400px"}
           />
-          </div>
         </Slider.Slide>
       </Slider>
     </div>

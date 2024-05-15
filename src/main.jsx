@@ -13,6 +13,11 @@ import {
 } from "react-router-dom";
 import RootLayout from "./components/RootLayout/RootLayout.jsx";
 import AboutUs from "./pages/AboutUs/AboutUs.jsx";
+import Services from "./pages/Services/Services.jsx";
+import "aos/dist/aos.css";
+import SingleService from "./pages/SingleService/SingleService.jsx";
+import DesignAndDevelopment from "./pages/SingleService/DesignAndDevelopment.jsx";
+
 const RouterStructure = () => {
   
   return (
@@ -21,9 +26,13 @@ const RouterStructure = () => {
       router={createBrowserRouter(
         createRoutesFromElements(
           <Route path="/" element={<RootLayout />}>
-       
             <Route path="/" index element={<App />} />
-            <Route path="AboutUs" index element={<AboutUs/>} />
+            <Route path="AboutUs"  element={<AboutUs/>} />
+            <Route path="Services"  element={<Services/>} />
+            <Route path="SingleService"  element={<SingleService/>} >
+            <Route path="DesignAndDevelopment" index element={<DesignAndDevelopment/>} />
+            </Route>
+            
           </Route>
         )
       )}
