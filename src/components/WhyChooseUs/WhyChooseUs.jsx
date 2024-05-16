@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
     };
   }, []);
   return (
-    <div className="my-5">
+    <div className="mt-5">
       <div className="bi-title-waterprint headline my-5">
         <h2>Why Choose Us</h2>
       </div>

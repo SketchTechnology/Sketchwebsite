@@ -21,10 +21,10 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden border border-5">
+    <div style={{overflow:'hidden'}} className='pt-5' >
 
     <div className='portfolioImg position-relative'>
-      <LazyLoadingImage src={img} alt={'portfolio'}   />
+      <LazyLoadingImage src={img} alt={'portfolio'}  height={'100%'}  />
     </div>
     </div>
   );
