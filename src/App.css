@@ -1,6 +1,6 @@
 
 :root{
-  --main-Color:#005E64;
+  --main-Color:#256378;
 
 }
 img{
@@ -98,14 +98,14 @@ nav{
   left: 0;
 }
 .contactUsBtn{
-  border: none !important;
-  background-color: var(--main-Color) !important;
-  color: white !important;
-  padding: 10px;
-  border-radius: 5px;
+
   position: fixed;
-  bottom: 20px;
-  right: 10px;
-  font-size: 14px;
+  bottom: 100px;
+  right: 5px;
   z-index: 9999;
+}
+@media(max-width:768px){
+  .svgParent{
+    display: none !important;
+  }
 }

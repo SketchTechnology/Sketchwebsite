@@ -20,16 +20,16 @@ const SingleService = () => {
   const Title = "service Name";
 
   return (
-    <div className="bg-white">
+    <div className="bg-white border">
       <HeadSec BtnsContent={BtnsContent} Title={Title} />
       <div className="d-flex container-fluid container-md mx-auto ">
         <SideBar />
         <div
-          className=" align-items-center bg-white p-0 p-md-5 w-100 "
+          className=" align-items-center bg-white justify-content-center d-flex  p-0 p-md-5 w-100 "
          
         >
           <div className="border w-100 h-100 rounded d-flex justify-content-start container py-3 align-items-center flex-column">
-            <div className="serviceImg w-100  border-5">
+            <div className="serviceImg w-100  ">
               <img
                 src="https://sketch-tech.com/wp-content/uploads/2023/08/section-2-banner.jpg"
                 alt=""

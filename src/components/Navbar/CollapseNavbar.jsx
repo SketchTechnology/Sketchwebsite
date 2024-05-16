@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 const CollapseNavbar = ({ expanded, toggleNavbar }) => {
   const [anime, setAnime] = useState(false);
   let timeoutId;
+
   const animeClicked = () => {
     setAnime(true);
     timeoutId = setTimeout(() => {
@@ -16,10 +17,16 @@ const CollapseNavbar = ({ expanded, toggleNavbar }) => {
       toggleNavbar();
     }, 1000);
   };
-  const {t} = useTranslation()
+
+  const handleLinkClick = () => {
+    setTimeout(() => {
+      animeClicked();
+    }, 200); // 0.5 seconds delay before invoking animeClicked
+  };
+
+  const { t } = useTranslation();
 
   useEffect(() => {
-   
     const cleanup = () => {
       clearTimeout(timeoutId);
     };
@@ -28,7 +35,6 @@ const CollapseNavbar = ({ expanded, toggleNavbar }) => {
     };
   }, [toggleNavbar]);
 
-  console.log(anime)
   return (
     <div className={expanded ? 'shows' : 'hideNav'}>
       <Navbar data-bs-theme="dark" className='h-75 w-100 d-flex justify-content-center'>
@@ -47,20 +53,66 @@ const CollapseNavbar = ({ expanded, toggleNavbar }) => {
               style={{ objectFit: 'contain' }}
             />
           </Navbar.Brand>
-          <Link  className={`${anime?'animeClickedLeft':'nav-link'}`} style={{animationDelay:"0.2s"}}  to={'/'}>   {t("navigation.Home")}</Link>
-          <Link to={'AboutUs'}  className={`${anime?'animeClickedRight':'nav-link'}`}style={{animationDelay:"0.3s"}}>{t("navigation.About")}</Link>
-          <Link  to={'Services'}   className={`${anime?'animeClickedLeft':'nav-link'}`} style={{animationDelay:"0.4s"}}>{t("navigation.Service")}</Link>
-          <Nav.Link href="#about" className={`${anime?'animeClickedRight':''}`} style={{animationDelay:"0.5s"}}>{t("navigation.Portoflio")}</Nav.Link>
-          <Nav.Link href="#about" className={`${anime?'animeClickedLeft':''}`} style={{animationDelay:"0.6s"}}>{t("navigation.Blog")}</Nav.Link>
+          <Link 
+            className={`${anime ? 'animeClickedLeft' : 'nav-link'}`} 
+            style={{ animationDelay: "0.2s" }}  
+            to={'/'}
+            onClick={handleLinkClick}
+          >
+            {t("navigation.Home")}
+          </Link>
+          <Link 
+            to={'AboutUs'}  
+            className={`${anime ? 'animeClickedRight' : 'nav-link'}`} 
+            style={{ animationDelay: "0.3s" }} 
+            onClick={handleLinkClick}
+          >
+            {t("navigation.About")}
+          </Link>
+          <Link 
+            to={'Services'}   
+            className={`${anime ? 'animeClickedLeft' : 'nav-link'}`} 
+            style={{ animationDelay: "0.4s" }} 
+            onClick={handleLinkClick}
+          >
+            {t("navigation.Service")}
+          </Link>
+          <Nav.Link 
+            href="#about" 
+            className={`${anime ? 'animeClickedRight' : ''}`} 
+            style={{ animationDelay: "0.5s" }} 
+            onClick={handleLinkClick}
+          >
+            {t("navigation.Portoflio")}
+          </Nav.Link>
+          <Nav.Link 
+            href="#about" 
+            className={`${anime ? 'animeClickedLeft' : ''}`} 
+            style={{ animationDelay: "0.6s" }} 
+            onClick={handleLinkClick}
+          >
+            {t("navigation.Blog")}
+          </Nav.Link>
+          <Nav.Link 
+            href="#about" 
+            className={`${anime ? 'animeClickedRight' : ''}`} 
+            style={{ animationDelay: "0.7s" }} 
+            onClick={handleLinkClick}
+          >
+            ContactUs
+          </Nav.Link>
           
           {/* Add more Nav.Link components as needed */}
-          <div className={`socialMediaBar d-flex justify-content-center flex-wrap rounded-pill border py-2 px-2 align-items-center  gap-3 ${anime?'animeClickedLeft':''}`} style={{animationDelay:"0.8s"}}>
-          <i className="fa-brands text-dark fa-instagram"></i>
-          <i className="fa-brands text-dark fa-facebook"></i>
-          <i className="fa-brands text-dark fa-youtube"></i>
-          <i className="fa-brands text-dark fa-linkedin-in"></i>
-          <i className="fa-brands fa-tiktok text-dark"></i>
-          <i className="fa-brands text-dark  fa-snapchat"></i>
+          <div 
+            className={`socialMediaBar d-flex justify-content-center flex-wrap rounded-pill border py-2 px-2 align-items-center gap-3 ${anime ? 'animeClickedLeft' : ''}`} 
+            style={{ animationDelay: "0.8s" }}
+          >
+            <i className="fa-brands text-dark fa-instagram"></i>
+            <i className="fa-brands text-dark fa-facebook"></i>
+            <i className="fa-brands text-dark fa-youtube"></i>
+            <i className="fa-brands text-dark fa-linkedin-in"></i>
+            <i className="fa-brands fa-tiktok text-dark"></i>
+            <i className="fa-brands text-dark fa-snapchat"></i>
           </div>
         </Container>
       </Navbar>

@@ -64,7 +64,7 @@ const AboutCompany = () => {
           </div>
           <div className="col-lg-5 ">
             <div className="bi-about-text-4 position-relative">
-              <div className="bi-section-title-4 headline" data-aos="zoom-in">
+              <div className="bi-section-title-4  headline" data-aos="zoom-in">
                 <Titles secondtitle={t('AboutCompany')} maintitle={t('AboutcompanyTitle')}  />
               </div>
               <div
@@ -83,7 +83,7 @@ const AboutCompany = () => {
                     {t('AboutUsBtn')}
 
                   </span>
-                  <span>
+                  <span className="text-center">
 
 +971 56 409 3626
                   </span>

@@ -110,7 +110,8 @@ transform: translateY(-50%);
 height: 7px;
 border-radius: 50%;
 }
-.MissionVision img:hover{
-    transform: scale(1.2);
+[alt="partners"]:hover{
+    transform: scale(1.2) !important;
     filter: blur(2px);
+    transition: 0.5s !important;
 }

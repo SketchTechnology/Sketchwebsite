@@ -1,11 +1,15 @@
 import "./VissionAndMission.css";
 import img1 from "../../assets/img/portfolio/pro2.jpg";
 import img2 from "../../assets/img/portfolio/port3.jpg";
+import { useEffect } from "react";
+import Aos from 'aos';
 const VissionAndMission = () => {
+  useEffect(() => {
+		Aos.init({ once: true });
+	  }, []);
   return (
     <div className="CreativeAgencParent  ">
         <div className="d-flex align-items-center gap-2  justify-content-center my-3">
-
           <span className="line"></span>
         <h2 className="text-dark  text-center d-flex justify-content-center align-items-center ">Our Vissions <span className="symbol"> & </span> Missions</h2>
         <span className="line"></span>
@@ -13,7 +17,7 @@ const VissionAndMission = () => {
 
       <div className="container mx-auto MissionVision">
         <div className="row justify-content-between my-2">
-          <div className="col-12 col-md-5 overflow-hidden p-0 rounded-4">
+          <div className="col-12 col-md-5 overflow-hidden p-0 rounded-4" data-aos="zoom-out" data-aos-delay="500">
             <img src={img1} alt="partners" width={"100%"} />
           </div>
           <div className="col-12 col-md-6 p-2 ">
@@ -43,7 +47,7 @@ const VissionAndMission = () => {
 
           </div>
           <div className="col-12 col-md-7 h-100 overflow-hidden  p-0 rounded-4">
-            <img src={img2} alt="partners" width={"100%"}  style={{objectFit:'contain'}} height={'200px !important'}/>
+            <img data-aos="zoom-in" data-aos-delay="500" src={img2} alt="partners" width={"100%"}  style={{objectFit:'contain'}} height={'200px !important'}/>
           </div>
         </div>
       </div>

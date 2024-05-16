@@ -17,6 +17,7 @@ import Services from "./pages/Services/Services.jsx";
 import "aos/dist/aos.css";
 import SingleService from "./pages/SingleService/SingleService.jsx";
 import DesignAndDevelopment from "./pages/SingleService/DesignAndDevelopment.jsx";
+import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 
 const RouterStructure = () => {
   
@@ -28,6 +29,7 @@ const RouterStructure = () => {
           <Route path="/" element={<RootLayout />}>
             <Route path="/" index element={<App />} />
             <Route path="AboutUs"  element={<AboutUs/>} />
+            <Route path="ContactUs"  element={<ContactUs/>} />
             <Route path="Services"  element={<Services/>} />
             <Route path="SingleService"  element={<SingleService/>} >
             <Route path="DesignAndDevelopment" index element={<DesignAndDevelopment/>} />

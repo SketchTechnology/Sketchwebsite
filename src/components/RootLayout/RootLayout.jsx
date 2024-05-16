@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import CursorCircle from '../CircleComponent/CircleComponent';
 import Footer from '../Footer/Footer';
 import FormModal from '../Modal/FormModal';
+import SocialBtn from '../SocialBtn/SocialBtn';
 
 const RootLayout = () => {
   const { i18n } = useTranslation();
@@ -23,7 +24,8 @@ const RootLayout = () => {
       <LanguageDropdown/>
       <CursorCircle/>
       <Footer/>
-      <FormModal/>
+      {/* <FormModal/> */}
+      <SocialBtn/>
        </I18nextProvider>
     </div>
   )

@@ -1,4 +1,11 @@
-.logoContainer img {
-    width: 200px !important;
+.mainContent img {
+    width: 300px !important;
     height: 100% !important;
 }
+
+
+.footerData p {
+    font-size: 25px;
+    width: 50%;
+}
+

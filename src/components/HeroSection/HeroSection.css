@@ -61,7 +61,7 @@ h1 strong {
     display: flex;
     font-size: 300px; /* Use viewport width unit for responsive font size */
     font-weight: 900;
-    background: linear-gradient(180deg, #005e64 0, rgba(255, 56, 56, 0) 100%);
+    background: linear-gradient(180deg, #256378 0, rgba(255, 56, 56, 0) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: inherit;
