@@ -40,7 +40,7 @@ const MainNavbar = () => {
     <>
       <Navbar
         variant="dark"
-        className={`${reachedEnd?"opacity-0":"opacity-100"} d-flex px-3 px-md-5 justify-content-between ${scrolled ? 'scrolled' : 'NavbarMain'}`}
+        className={`${reachedEnd?"opacity-0":"opacity-100"} border border-5 d-flex px-3 px-md-5 justify-content-between ${scrolled ? 'scrolled' : 'NavbarMain'}`}
         style={{ backgroundColor: 'var(--main-Color)' }}
         ref={navbarRef}
       >
