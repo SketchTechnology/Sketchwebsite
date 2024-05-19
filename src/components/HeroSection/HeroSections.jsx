@@ -6,59 +6,102 @@ import img2 from '../../assets/img/slider/bn2.png';
 import img3 from '../../assets/img/slider/bn3.png';
 import img4 from '../../assets/img/slider/bn4.png';
 import img5 from '../../assets/img/slider/bn5.png';
+import layerOne from '../../assets/img/new_home/bg-shape/hero-1-bg-shape-1.png'
+import layertwo from '../../assets/img/new_home/bg-shape/hero-1-bg-shape-2.png'
 import { useTranslation } from 'react-i18next';
+import LogoSlider from '../LogoSlider/LogoSlider';
 
 const HeroSections = () => {
   useEffect(() => {
     Aos.init({ once: true });
   }, []);
-  const {t} = useTranslation()
+  // const {t} = useTranslation()
 
-  const handleMouseMove = (e) => {
-    const imgs = document.querySelectorAll('.img');
-    imgs.forEach((img) => {
-      const offsetX = e.clientX - img.getBoundingClientRect().left;
-      const offsetY = e.clientY - img.getBoundingClientRect().top;
-      const transformX = offsetX / img.offsetWidth - 0.5;
-      const transformY = offsetY / img.offsetHeight - 0.5;
-      img.style.transform = `translate(${transformX * 30}px, ${transformY * 30}px)`;
-    });
-  };
+  // const handleMouseMove = (e) => {
+  //   const imgs = document.querySelectorAll('.img');
+  //   imgs.forEach((img) => {
+  //     const offsetX = e.clientX - img.getBoundingClientRect().left;
+  //     const offsetY = e.clientY - img.getBoundingClientRect().top;
+  //     const transformX = offsetX / img.offsetWidth - 0.5;
+  //     const transformY = offsetY / img.offsetHeight - 0.5;
+  //     img.style.transform = `translate(${transformX * 30}px, ${transformY * 30}px)`;
+  //   });
+  // };
 
-  const handleMouseLeave = () => {
-    const imgs = document.querySelectorAll('.img');
-    imgs.forEach((img) => {
-      img.style.transform = 'translate(0, 0)';
-    });
-  };
+  // const handleMouseLeave = () => {
+  //   const imgs = document.querySelectorAll('.img');
+  //   imgs.forEach((img) => {
+  //     img.style.transform = 'translate(0, 0)';
+  //   });
+  // };
 
   return (
-    <div className="HeroSectionParent" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-      <div className="container container-md-fluid mx-auto d-flex flex-column align-items-center position-relative text-center">
-        <div className="imgOne img" data-aos="zoom-in" data-aos-delay="200" >
+    <>
+<div className="HeroSection  position-relative overflow-hidden" >
+  <div className="LayerImgOne w-100   ">
+    <img src={layerOne} alt=""   />
+  </div>
+  <div className="LayerImgTwo ">
+    <img src={layertwo} alt="" />
+  </div>
+<div className="d-flex flex-column  container mx-auto
+ h-100 justify-content-center  align-items-start w-100">
+<div className="Welcomebadge p-2">
+  <p>  Welcome to our Company</p>
+</div>
+<div className="mainTitleHero">
+  <h2>Web Agency For Your Business
+</h2>
+<div className="mainParaHero">
+  <p>
+Welcome Web Agency
+Web Agency For Your Business
+Suspendisse finibus dolor et pharetra porta. Sed quam elit, lacinia vitae mi quis, ullamcorper imperdiet dolor. Ut imper turpis nulla, eget pharetra.</p>
+</div>
+</div>
+<div className="HeroBtn ">
+<button className="button2 text-dark">Get Started</button>
+</div>
+</div>
+</div>
+
+<LogoSlider/>
+</>
+
+
+
+
+    
+  );
+};
+
+export default HeroSections;
+// <div classNameName="HeroSectionParent" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+      {/* <div classNameName="container container-md-fluid mx-auto d-flex flex-column align-items-center position-relative text-center">
+        <div classNameName="imgOne img" data-aos="zoom-in" data-aos-delay="200" >
           <img src={img1} alt="" />
         </div>
-        <div className="imgTwo img" data-aos="zoom-out" data-aos-delay="400" >
+        <div classNameName="imgTwo img" data-aos="zoom-out" data-aos-delay="400" >
           <img src={img2} alt="" />
         </div>
-        <div className="imgThree img" data-aos="zoom-in" data-aos-delay="600" >
+        <div classNameName="imgThree img" data-aos="zoom-in" data-aos-delay="600" >
           <img src={img3} alt="" />
         </div>
-        <div className="imgFour img" data-aos="zoom-in" data-aos-delay="800" > 
+        <div classNameName="imgFour img" data-aos="zoom-in" data-aos-delay="800" > 
           <img src={img4} alt="" />
         </div>
-        <div className="imgFive img" data-aos="zoom-in" data-aos-delay="900" >
+        <div classNameName="imgFive img" data-aos="zoom-in" data-aos-delay="900" >
           <img src={img5} alt="" />
         </div>
-        <div className="d-flex justify-content-center flex-wrap flex-column flex-md-row align-items-center">
-          <h1 className="flex-column d-flex justify-content-center align-items-center container text-center">
-            <p data-aos="fade-left" data-aos-delay="1000" className="fw-lighter text-center text-md-start">
+        <div classNameName="d-flex justify-content-center flex-wrap flex-column flex-md-row align-items-center">
+          <h1 classNameName="flex-column d-flex justify-content-center align-items-center container text-center">
+            <p data-aos="fade-left" data-aos-delay="1000" classNameName="fw-lighter text-center text-md-start">
               We Are
             </p>
-            <span data-aos="fade-right" data-aos-delay="1200" className="text-center text-md-start">
+            <span data-aos="fade-right" data-aos-delay="1200" classNameName="text-center text-md-start">
               Creative
             </span>
-            <strong data-aos="fade-left" data-aos-delay="1400" className="d-flex justify-content-md-start justify-content-center">
+            <strong data-aos="fade-left" data-aos-delay="1400" classNameName="d-flex justify-content-md-start justify-content-center">
               Agency
             </strong>
           </h1>
@@ -67,7 +110,7 @@ const HeroSections = () => {
         {t('HomeContent')}
         </p>
       </div>
-      <div className="svgParent">
+      <div classNameName="svgParent">
 
       
       <div style={{ overflow: 'hidden' }}>
@@ -100,9 +143,5 @@ const HeroSections = () => {
           <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
         </svg>
       </div>
-      </div>
-    </div>
-  );
-};
-
-export default HeroSections;
+      </div> */}
+    // </div>

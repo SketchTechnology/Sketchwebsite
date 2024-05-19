@@ -21,11 +21,11 @@ const RootLayout = () => {
       <I18nextProvider i18n={i18n}>
       <MainNavbar/>
       <Outlet/>   
-      <LanguageDropdown/>
+      {/* <LanguageDropdown/> */}
       <CursorCircle/>
       <Footer/>
       {/* <FormModal/> */}
-      <SocialBtn/>
+      {/* <SocialBtn/> */}
        </I18nextProvider>
     </div>
   )

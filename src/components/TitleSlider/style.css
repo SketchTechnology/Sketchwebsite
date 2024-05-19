@@ -8,7 +8,7 @@
   -webkit-text-stroke-color: #FF3838;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  white-space: no-wrap;
+ 
 }
 
 .full-width-slider {
@@ -19,7 +19,7 @@
 @media  (max-width: 425px) {
   .slidertitle {
     white-space: inherit;
-    font-size: 30px; /* Decrease font size for smaller screens */
+    font-size: 25px !important; /* Decrease font size for smaller screens */
   }
 }
 

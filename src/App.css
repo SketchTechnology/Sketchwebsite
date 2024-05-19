@@ -7,7 +7,7 @@ img{
   object-fit: contain;
 }
 * {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Catamaran, sans-serif";
     scroll-behavior: smooth;
     text-decoration: none;
     box-shadow: none !important;
@@ -24,8 +24,8 @@ img{
     color: var(--main-Color) !important;
   }
   body{
-    background-color: #f5f0d6 !important;
-    overflow-x: hidden;
+    background-color: #f2f2ea !important;
+    overflow-x: hidden !important;
   }
 button:focus:not(:focus-visible),.navbar-toggler{
     border: none !important;
@@ -108,4 +108,25 @@ nav{
   .svgParent{
     display: none !important;
   }
+}
+.OurClientsLogo{
+  position: absolute;
+  background-color: white !important;
+  z-index: 9999;
+  height: 100%;
+}
+.OurClientsLogo h2 {
+
+  width: 250px;
+  height: 100% !important;
+}
+@media (max-width:768px){
+  .OurClientsLogo h2 {
+font-size: 18px !important;
+    width: 100px;
+    height: 100% !important;
+  }
+}
+.logoSlider{
+  z-index: 2;
 }

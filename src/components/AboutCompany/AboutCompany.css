@@ -65,7 +65,9 @@ width: 100% !important;
         width: 100%;
     }
    
-    
+    .bi-abut-feature-list-4 span{
+        font-size: 20px;
+    }
     .about-img2 img,.about-img1 img{
         object-fit: contain;
         width: 100%;

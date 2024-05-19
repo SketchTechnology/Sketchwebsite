@@ -4,6 +4,7 @@ import SideBar from "../../components/SideBar/SideBar";
 import HeadSec from "../../components/HeadSec/HeadSec";
 import "./ServiceSingle.css";
 import SimpleCard from "../../components/Cards/SimpleCard";
+import AccordionSub from "../../components/AccordionSuB/AccordionSub";
 const SingleService = () => {
   const BtnsContent = [
     {
@@ -45,8 +46,9 @@ const SingleService = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a libero maximus, rhoncus ex vel, suscipit velit. Donec in interdum nisl. Curabitur fringilla turpis sed nulla auctor, laoreet mollis sem maximus. Suspendisse laoreet feugiat accumsan. Sed mollis, augue a ultrices convallis, dolor metus eleifend nulla, at efficitur lacus nisi sit amet est. Morbi rutrum ullamcorper orci eu auctor. In hac habitasse platea dictumst. Integer venenatis eu arcu et convallis. Vestibulum in lacinia sem, quis aliquet turpis. Fusce bibendum posuere velit, ut auctor leo aliquam vel. Suspendisse ut pharetra urna. Duis ultricies odio ullamcorper, tempor enim id, volutpat nunc. In tellus erat, pellentesque ut erat at, suscipit pharetra mauris. Proin gravida dictum lectus, sed bibendum mauris elementum non. Pellentesque mi erat, pulvinar sed rhoncus id, euismod non turpis.
               </p>
             </div>
-            <div className="ServicesCards row justify-content-center">
-              <div className="col-12 my-2 col-md-6">
+            <div className="ServicesCards w-100 justify-content-center">
+              <AccordionSub/>
+              {/* <div className="col-12 my-2 col-md-6">
                 <SimpleCard/>
               </div>
               <div className="col-12 my-2 col-md-6">
@@ -57,7 +59,7 @@ const SingleService = () => {
               </div>
               <div className="col-12 my-2 col-md-6">
                 <SimpleCard/>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

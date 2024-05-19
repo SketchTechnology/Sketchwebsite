@@ -8,4 +8,8 @@
     font-size: 25px;
     width: 50%;
 }
+.footerData img {
+    width: 250px !important;
+    object-fit: contain;
+}
 

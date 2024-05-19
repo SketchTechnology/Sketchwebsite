@@ -1,0 +1,99 @@
+.HoverItems{
+    width: 200px;
+    height: 650px !important;
+    transition: 1s;
+    border-radius: 10px;
+}
+@media(max-width:768px){
+  .HoverItems{
+    width: 90%;
+    height: 250px !important;
+    transition: 1s;
+    border-radius: 10px;
+}
+.HoverItems span {
+  position: absolute; /* Position absolutely within the HoverItem */
+  width: 90%; 
+  z-index: 9999;
+  display: flex;
+  font-size: 25px ;
+  justify-content: center;
+  text-align: center; 
+  transform: rotate(0deg) !important; 
+}
+.HoverItems:hover{
+  height: 650px !important;
+}
+}
+.HoverItems:hover{
+    width: 650px;
+}
+.iconCard{
+    position: absolute;
+    left: 50%; 
+    top: 30px;
+    transform: translateX(-50%);
+    transition: 0s !important;
+    z-index: 999;
+}
+/* HoverSlider.css */
+
+.HoverItems {
+    position: relative;
+    height: 200px; /* Adjust the height as needed */
+    background-color: rgba(0, 7, 26, .05);/* Background color for visibility */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+  }
+  .hoverData{
+    background-position: center;
+    background-size: cover;
+    height: 100% !important;
+    background-repeat: no-repeat !important; 
+    opacity: 0;
+    position: relative;
+    width: 100% !important;
+  }
+  /* .bg-dark{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8)
+  } */
+  .HoverItems span {
+    position: absolute; /* Position absolutely within the HoverItem */
+    width: 100%; 
+    z-index: 9999;
+    display: flex;
+    font-size: 25px ;
+    text-align: center; 
+    transform: rotate(90deg); 
+}
+.HoverItems:hover.HoverItems span{
+  display: none;
+} 
+ 
+ .HoverItems:hover .hoverData{
+   animation: Appear 0.5s linear forwards;
+   animation-delay: 0.3s;
+}  
+@keyframes Appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+ .HoverItems:hover [ alt="icon"]{
+    
+     filter: brightness(100%);
+ }
+[ alt="icon"]{
+    width: 50px;
+    object-fit: contain;
+    filter: brightness(0%);
+}
