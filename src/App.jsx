@@ -12,9 +12,8 @@ function App() {
   return (
     <div >
 <HeroSections/>
-{/* <AboutCompany/> */}
+<AboutCompany/>
 <OurServices/>
-
 <WhyChooseUs/>
 <Portfolio/>
 <OurExpertTeam/>

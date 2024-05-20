@@ -223,7 +223,7 @@ const ContactUs = () => {
                         </div>
                         <div className="col-md-12 p-0">
                           <div className="bi-submit-btn">
-                            <button className="button2 text-dark" type="submit">
+                            <button className="text-dark px-5 border-0 rounded "  type="submit">
                               Send
                             </button>
                           </div>

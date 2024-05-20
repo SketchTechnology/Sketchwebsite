@@ -130,3 +130,33 @@ font-size: 18px !important;
 .logoSlider{
   z-index: 2;
 }
+.ServiceParent{
+  margin: 100px 0 !important;
+}
+.card{
+  background-color: transparent !important;
+}
+.card-text{
+  font-size: 18px;
+}
+.iconCards{
+  position: relative;
+}
+.iconCards::before{
+  content: '';
+  width: 15% !important;
+  background-color: var(--main-Color) !important;
+  height: 2px;
+  left: 2px;
+  transition: 0.2s;
+  border-radius: 20px;
+  z-index: 5555555555;
+  position: absolute;
+  bottom: -10px;
+  opacity: 0.5;
+}
+.card:hover .iconCards::before{
+  opacity: 1;
+  width: 100% !important;
+
+}

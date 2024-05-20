@@ -6,7 +6,7 @@ import HoverSlider from '../HoverSlider/HoverSlider'
 const OurServices = () => {
   const {t} = useTranslation()
   return (
-    <div className="my-5">
+    <div className="ServiceParent">
       <div className="container  mx-auto">
         <div className="row flex-wrap flex-column  flex-md-row">
           <div className="col-12 col-md-6 my-2">

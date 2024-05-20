@@ -100,14 +100,14 @@ const SideBar = () => {
   ];
 
   return (
-    <nav ref={navRef} className={`MainNav rounded-3 p-4 ${show && 'showNav'}`}>
+    <nav ref={navRef} className={`MainNav  rounded-3  ${show && 'showNav'}`}>
       <div className="container h-100 d-flex flex-column my-auto justify-content-center align-items-center">
         <div className="ServiceHeading gap-2 d-flex justify-content-center align-items-center">
           <span></span>
           <p className="ServicesTitle">Main Services</p>
           <span></span>
         </div>
-        <ul className="d-flex align-items-center h-75 justify-content-center flex-column p-3 gap-3 MainNavList">
+        <ul className="d-flex  align-items-center h-75 justify-content-center flex-column p-3 gap-3 MainNavList">
           {MenuData.map((item, indx) => (
             <li
               className={`${

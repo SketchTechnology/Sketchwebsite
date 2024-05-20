@@ -1,14 +1,14 @@
 {
     "navigation":{
-        "Home":"home",
-        "About":"about",
-        "Service":"service",
-        "Portoflio":"portoflio",
-        "Blog":"blog"
+        "Home":"Home",
+        "About":"About",
+        "Service":"Service",
+        "Portoflio":"Portoflio",
+        "Blog":"Blog"
     },
     "HomeContent":"Your aspirations and goals, Our approaches, and strategies. Let's collaborate to create digital masterpieces!    ",
-    "ContactUsBtn":"contact us",
-    "AboutCompany":"about Company",
+    "ContactUsBtn":"Contact us",
+    "AboutCompany":"About Company",
     "AboutcompanyTitle":"Where innovation meets impact", 
    "AboutCompanyParagraph":" We specialize in driving unparalleled growth and delivering exceptional results for businesses just like yours",
    "CreativeTeam":"Creative team",

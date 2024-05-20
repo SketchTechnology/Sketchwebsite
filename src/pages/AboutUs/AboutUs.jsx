@@ -22,7 +22,7 @@ const Title = 'About Us'
       <HeadSec BtnsContent={BtnsContent} Title={Title}/>
       <CreativeAgency/>
       <VissionAndMission/>
-      <LogoSlider/>
+      {/* <LogoSlider/> */}
 
     </div>
   )

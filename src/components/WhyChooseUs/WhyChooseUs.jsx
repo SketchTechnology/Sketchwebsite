@@ -63,9 +63,9 @@ const WhyChooseUs = () => {
                   <p data-aos="fade-up">
                  {t("WhyChooseUsBaragraph")}
                   </p>
-                  <div data-aos="fade-left">
+                  {/* <div data-aos="fade-left">
                     <AboutCard content={content} />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

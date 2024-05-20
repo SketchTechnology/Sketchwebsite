@@ -2,8 +2,8 @@ import './titles.css'
 const Titles = ({maintitle,secondtitle}) => {
   console.log(secondtitle)
   return (
-    <div className='container p-0 p-md-2'>
-      <div className="d-flex align-items-center">
+    <div className='container p-0 p-md-2 '>
+      <div className="d-flex align-items-center gap-2">
       <h5 className='subTitle  '>
         {secondtitle}
       </h5>

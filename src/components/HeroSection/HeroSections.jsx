@@ -10,6 +10,7 @@ import layerOne from '../../assets/img/new_home/bg-shape/hero-1-bg-shape-1.png'
 import layertwo from '../../assets/img/new_home/bg-shape/hero-1-bg-shape-2.png'
 import { useTranslation } from 'react-i18next';
 import LogoSlider from '../LogoSlider/LogoSlider';
+import { TypeAnimation } from 'react-type-animation';
 
 const HeroSections = () => {
   useEffect(() => {
@@ -37,7 +38,9 @@ const HeroSections = () => {
 
   return (
     <>
+    
 <div className="HeroSection  position-relative overflow-hidden" >
+
   <div className="LayerImgOne w-100   ">
     <img src={layerOne} alt=""   />
   </div>
@@ -50,16 +53,28 @@ const HeroSections = () => {
   <p>  Welcome to our Company</p>
 </div>
 <div className="mainTitleHero">
-  <h2>Web Agency For Your Business
-</h2>
+ 
+<TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+       // wait 1s before replacing "Mice" with "Hamsters"
+        'Web Agency For Your Business',
+        1000,
+       
+      ]}
+      wrapper="h2"
+      speed={500}
+      style={{ fontSize: '3em', display: 'inline-block' }}
+      repeat={Infinity} />
 <div className="mainParaHero">
   <p>
+  
 Welcome Web Agency
 Web Agency For Your Business
 Suspendisse finibus dolor et pharetra porta. Sed quam elit, lacinia vitae mi quis, ullamcorper imperdiet dolor. Ut imper turpis nulla, eget pharetra.</p>
 </div>
 </div>
-<div className="HeroBtn ">
+<div className="HeroBtn  w-100 d-flex justify-content-center mt-3 justify-content-md-start  ">
 <button className="button2 text-dark">Get Started</button>
 </div>
 </div>

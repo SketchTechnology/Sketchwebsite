@@ -37,24 +37,17 @@ const Footer = () => {
                   <div className="col-12  col-md-6   flex-column  d-flex align-items-start gap-2 justify-content-start  p-0  text-start">                
                     <p className="text-white fs-6">Home</p>
                     <p className="text-white fs-6">About</p>
-                    <p className="text-white fs-6">Service</p> 
-                 
+                    <p className="text-white fs-6">Service</p>                  
                   <p className="text-white mb-2 fs-6"> Contact Us</p>           
-                  </div>
-                
-            
-  
+                  </div> 
                 </div>
                
               </div>
             </div>
         </div>
-        
-         
-          
-           
+                                              
           </div>
-          <div className="col-12 col-md-12 col-lg-5 col-xl-5">
+          <div className="col-12 col-md-12 col-lg-6 col-xl-5">
             <div className="row py-3 justify-content-start flex-column   align-items-start ">
             <div className="col-12    text-center">
               <div className="d-flex flex-column   ">

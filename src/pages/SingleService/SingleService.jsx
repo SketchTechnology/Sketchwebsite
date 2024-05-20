@@ -5,6 +5,7 @@ import HeadSec from "../../components/HeadSec/HeadSec";
 import "./ServiceSingle.css";
 import SimpleCard from "../../components/Cards/SimpleCard";
 import AccordionSub from "../../components/AccordionSuB/AccordionSub";
+import ServiceBar from "../../components/ServiceBar/ServiceBar";
 const SingleService = () => {
   const BtnsContent = [
     {
@@ -21,9 +22,9 @@ const SingleService = () => {
   const Title = "service Name";
 
   return (
-    <div className="bg-white border">
+    <div className="bg-white  border">
       <HeadSec BtnsContent={BtnsContent} Title={Title} />
-      <div className="d-flex container-fluid container-md mx-auto ">
+      <div className="d-flex  mx-auto ">
         <SideBar />
         <div
           className=" align-items-center bg-white justify-content-center d-flex  p-0 p-md-5 w-100 "
@@ -46,20 +47,11 @@ const SingleService = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a libero maximus, rhoncus ex vel, suscipit velit. Donec in interdum nisl. Curabitur fringilla turpis sed nulla auctor, laoreet mollis sem maximus. Suspendisse laoreet feugiat accumsan. Sed mollis, augue a ultrices convallis, dolor metus eleifend nulla, at efficitur lacus nisi sit amet est. Morbi rutrum ullamcorper orci eu auctor. In hac habitasse platea dictumst. Integer venenatis eu arcu et convallis. Vestibulum in lacinia sem, quis aliquet turpis. Fusce bibendum posuere velit, ut auctor leo aliquam vel. Suspendisse ut pharetra urna. Duis ultricies odio ullamcorper, tempor enim id, volutpat nunc. In tellus erat, pellentesque ut erat at, suscipit pharetra mauris. Proin gravida dictum lectus, sed bibendum mauris elementum non. Pellentesque mi erat, pulvinar sed rhoncus id, euismod non turpis.
               </p>
             </div>
-            <div className="ServicesCards w-100 justify-content-center">
-              <AccordionSub/>
-              {/* <div className="col-12 my-2 col-md-6">
-                <SimpleCard/>
-              </div>
-              <div className="col-12 my-2 col-md-6">
-                <SimpleCard/>
-              </div>
-              <div className="col-12 my-2 col-md-6">
-                <SimpleCard/>
-              </div>
-              <div className="col-12 my-2 col-md-6">
-                <SimpleCard/>
-              </div> */}
+            <div className="ServicesCards d-flex shadow w-100 justify-content-center">
+              {/* <AccordionSub/> */}
+              
+              <ServiceBar />
+            <Outlet/>
             </div>
           </div>
         </div>

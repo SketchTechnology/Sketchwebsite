@@ -1,7 +1,6 @@
-.MainNav{
+.ServiceBar{
     width:350px ;
     border: 2px solid rgb(255, 255, 255);
-    height: 100vh;
     position: sticky !important;
     left: -500px !important;
     top: 0;
@@ -12,8 +11,15 @@
     transition: 0.5s;
 }
 
-.MainNavList{
+.ServiceBarList{
     padding: 20px !important;
+}
+.selecetedArrow{
+    /* transform: translate(120%,-150%); */
+    top: 10%;
+    left: 95%;
+    z-index: 999999999999999999999999999 !important;
+    position: absolute;
 }
 .navClick{
     top: 50%;
@@ -23,7 +29,7 @@ position: fixed;
 }
 
 @media(max-width:1200px){
-    .MainNav{
+    .ServiceBar{
         position: fixed !important;
         left: -500px;
         /* top: 0; */
@@ -57,16 +63,17 @@ position: fixed;
         color : white !important
     }
 }
-.MainNav ul li {
+.ServiceBar ul li {
     cursor: pointer;
+    position: relative !important;
 }
-.MainNav ul li:hover{
+.ServiceBar ul li:hover{
    background-color: var(--main-Color );
    color: white !important;
 
    
 }
-.MainNav ul li:hover .MainNav ul div {
+.ServiceBar ul li:hover .ServiceBar ul div {
    color: white !important;
  
 
@@ -76,18 +83,19 @@ position: fixed;
     background-color: var(--main-Color );  
       color: white !important;
     font-weight: 700;
+    position: relative;
     box-shadow: 0 0 15px 5px lightgray !important;
 }
-.MainNav ul div {
+.ServiceBar ul div {
     width: 100px;
     color :black !important
 }
-.MainNav ul li i {
+.ServiceBar ul li i {
     width: 20px;
     color: black !important;
 }
 
-.MainNav ul li img {
+.ServiceBar ul li img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -99,7 +107,7 @@ position: fixed;
     object-fit: cover;
 }
 @media(max-width:768px){
-.MainNav{
+.ServiceBar{
     left:-500px
 }
 .appearNav{
