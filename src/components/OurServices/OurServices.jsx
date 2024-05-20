@@ -20,8 +20,8 @@ const OurServices = () => {
           </div>
         </div>
       </div>
-      <HoverSlider/>
-      {/* <ImageSlider/> */}
+      {/* <HoverSlider/> */}
+      <ImageSlider/>
     </div>
   );
 };

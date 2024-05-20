@@ -18,7 +18,8 @@ const DesignAndDevelopment = () => {
           </div>
         </Carousel>
       </div>
-      <div className="col-6 rounded d-flex align-items-center justify-content-center">
+      <div className="col-6 rounded d-flex align-items-center flex-column  justify-content-center">
+        <h2 className='text-dark'>Ui&UX</h2>
         <ul className="w-100 d-flex flex-column gap-3">
           <div className="d-flex align-items-center gap-2">
             <img src={arrowRight} alt="Arrow" />
