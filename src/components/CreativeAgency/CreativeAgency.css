@@ -125,13 +125,13 @@ animation: aniamteHover backwards 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) ;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
     padding: 0.8em 3.7em;
     cursor: pointer;
     font-size: 18px;
     border-radius: 0.5em;
     background: transparent;
-    border: 1px solid #e8e8e8;
+    border: 1px solid #000000;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
   }
   

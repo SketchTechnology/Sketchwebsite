@@ -1,13 +1,35 @@
 import Slider from "react-infinite-logo-slider";
 import "./ImageSlider.css"; // Import CSS file for custom styling
 import LazyLoadingImage from "../LazyLoadingImg/LazyLoadingImg";
-import img1 from '../../assets/img/Cards/card-1.webp'
-import img2 from '../../assets/img/Cards/card-2.webp'
-import img3 from '../../assets/img/Cards/card-3.webp'
-import img4 from '../../assets/img/Cards/card-4.webp'
-import img5 from '../../assets/img/Cards/card-5-2.webp'
-import img6 from '../../assets/img/Cards/card-7-1.webp'
+import img1 from '../../assets/img/service/ser1.png'
+import img2 from '../../assets/img/service/ser2.png'
+import img3 from '../../assets/img/service/ser3.png'
+import arrow from '../../assets/img/service/9174013.png'
 const ImageSlider = () => {
+  const ServicesSlider = [
+    {
+      img:img1,
+      content:'UI&Ux'
+    },
+    {
+      img:img2,
+      content:'UI&Ux'
+    },
+    {
+      img:img3,
+      content:'UI&Ux'
+    }
+    ,
+    {
+      img:img2   ,
+      content:'UI&Ux'
+    }
+    ,
+    {
+      img:img1  ,
+      content:'UI&Ux'
+    }
+  ]
   return (
     <div className="full-width-slider my-5">
       {" "}
@@ -20,66 +42,31 @@ const ImageSlider = () => {
         blurBorders={false}
         blurBoderColor={"#fff"}
       >
-        <Slider.Slide>
-    
-            <LazyLoadingImage
-              src={
-                img1
-              }
-              alt={"UiUx"}
-              height={"400px"}
-            />
-        </Slider.Slide>
-        <Slider.Slide>
-     =
+        {
+          ServicesSlider.map((item,ind)=>   <Slider.Slide key={ind}>
+    <div className="sliderParent position-relative">
+
           <LazyLoadingImage
             src={
-              img2
-            }
-            alt={"Web Development"}
-            height={"400px"}
-          />
-       
-        </Slider.Slide>
-        <Slider.Slide> 
-  
-          <LazyLoadingImage
-            src={
-              img3
-            }
-            alt={"Mobile Apps"}
-            height={"400px"}
-          />
-        </Slider.Slide>
-        <Slider.Slide>
-       
-          <LazyLoadingImage
-            src={
-              img4
+              item.img
             }
             alt={"UiUx"}
             height={"400px"}
-          />
-        </Slider.Slide>
-        <Slider.Slide>
+            />
+            <div className="sliderContent px-3 align-items-center w-100 d-flex justify-content-between">
+          <span >
+            {item.content}
+          </span>
+          <div className="arrowImg">
+
+      <img src={arrow} alt="" />
+          </div>
+            </div>
+            </div>
+      </Slider.Slide>  )
+        }
       
-          <LazyLoadingImage
-            src={
-              img5}
-            alt={"Web Development"}
-            height={"400px"}
-          />
-        </Slider.Slide>
-        <Slider.Slide>
-     
-          <LazyLoadingImage
-            src={
-              img6
-            }
-            alt={"Mobile Apps"}
-            height={"400px"}
-          />
-        </Slider.Slide>
+
       </Slider>
     </div>
   );

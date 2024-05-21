@@ -1,0 +1,61 @@
+.linePill{
+    width: 250px;
+    height: 1px;
+    background-color: var(--main-Color);
+
+}
+.pill{
+    color: white !important;
+    background-color: var(--main-Color);
+    border-radius: 20px 0 0 20px;
+    padding: 2px;
+    font-size: 12px;
+}
+.starBlog img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    filter: sepia(1) hue-rotate(180deg) saturate(1.5) brightness(0.5);
+
+}
+.blogPillsCont{
+    position: relative;
+    display: flex;
+    top: 10px;
+}
+
+.blogsData:nth-child(even) {
+    flex-direction: row-reverse !important;
+}
+
+.blogsData:nth-child(odd) .blogPillsCont {
+    left: -120px !important;
+}
+
+.blogsData:nth-child(even) .blogPillsCont {
+    flex-direction: row-reverse;
+    left: 140px !important;
+}
+.blogsData:nth-child(odd) .blogPillsCont {
+    flex-direction: row !important;
+    left: -80px !important;
+}
+
+@media(max-width:768px){
+    .blogsData:nth-child(odd) .blogPillsCont {
+        left: 0px !important;
+    }
+    
+    .blogsData:nth-child(even) .blogPillsCont {
+        flex-direction: row-reverse;
+        left: 0px !important;
+    }
+    .blogsData:nth-child(odd) .blogPillsCont {
+        flex-direction: row !important;
+        left: 0px !important;
+    }
+    .pill{
+        font-size: 10px;
+        padding: 1px;
+    }
+}

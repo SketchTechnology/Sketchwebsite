@@ -8,7 +8,7 @@
     transition: 0.5s !important;
 }
 nav{
-    z-index: 9;
+    z-index: 99999999;
 }
 .shows{
     left: 0;
