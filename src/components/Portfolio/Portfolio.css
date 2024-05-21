@@ -1,8 +1,14 @@
 .portfolioImg  {
-    height: 300px;
     z-index: -1;
     transform: scale(1.8);
     transition: 0.2s;
+    height: 650px !important;
+}
+.portfolioparent{
+    height: 600px !important;
+}
+.portfolioparent img{
+    height: 100% !important;
 }
 .portfolioImg .lazyload-wrapper{
     width: 100%;

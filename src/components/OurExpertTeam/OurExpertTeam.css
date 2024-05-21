@@ -111,10 +111,10 @@ background-image: linear-gradient(43deg, #3a406d 0%, #5c3459 14%, #907952 98%, #
   }
   @media (max-width:768px) {
     .TeamTitle{
-      font-size: 35px !important;
+      font-size: 25px !important;
     }
     .titleMain span{
-      width: 75px !important;
+      width: 55px !important;
     }
   }
   .OurTeam{

@@ -1,0 +1,7 @@
+.HeroParent{
+    background-image:url('https://sketch-tech.com/wp-content/uploads/2023/08/slider.jpg');
+    background-size: cover;
+    background-position: center ;
+    height: 550px;
+    background-attachment: fixed;
+}

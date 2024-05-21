@@ -1,0 +1,9 @@
+.btnGroup{
+    background-color:black !important;
+    width: 200px;
+    padding: 10px;
+}
+
+.text-main{
+    color: var(--main-Color) !important;
+}

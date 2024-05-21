@@ -1,5 +1,90 @@
 {
     "navigation":{
-        "home":"الرئيسيه"
-    }
+        "Home":"الرئيسية",
+        "About":"معلومات عنا ",
+        "Service":"خدماتنا",
+        "Portoflio":"سابقة أعمالنا",
+        "Blog":"المدونة"
+    },
+    "HomeContent":"بالتعاون المشترك نقدم أفضل استراتيجياتنا لإنشاء روائع رقمية تلبي  احتياجاتكم  وتفوق  توقعاتكم    ",
+    "ContactUsBtn":"اتصل بنا",
+    "AboutCompany":"عن الشركة",
+    "AboutCompanyTitle":"هنا يلتقي التأثير مع الابتكار", 
+   "AboutCompanyParagraph":" تكمن خبرتنا في تقديم نمو استثنائي ونتائج لا مثيل لها للشركات",
+   "CreativeTeam":"فريقنا الإبداعي",
+   "24/5_Support ":"دعم فني 24/5",
+   "ManagementSystem":"النظام الإداري",
+   "HighQuality":"جودة عالية",
+   "AboutUsBtn":"معلومات عنا",
+   "SketchDigital ":"وكالة سكتش للتسويق الرقمي ",
+
+   "OurBestServices":{
+    "OurService":"افضل خدماتنا",
+"WhereInnovation":"هنا يلتقي التأثير مع الابتكار",
+"WebServices":"تصميم وإنشاء المواقع الإلكترونية",
+"DigitalMarketing ":"التسويق الرقمي ",
+"SocialMediaMarketing":"تسويق منصات التواصل الإجتماعي ",
+"Seo/Sem":"SEO / SEM ",
+"ContentMarketing":"تسويق المحتوى",
+"CreativeDesigns":"التصاميم الإبداعية",
+"VideoProduction":"انتاج الفيديو ",
+"MarketingConsulting":" الاستشارات التسويقية"
+},
+"AnimationSection":"حان الوقت الآن للتخلص من الطرق التقليدية في العمل",
+
+"WhyChooseUs":"لماذا تختار سكتش",
+"WhyChooseUsTitle":"التسويق الرقمي ليس مجرد وظيفة ولكنه الفن الذي نقدمه",
+"WhyChooseUsBaragraph":"بسعي مستمر لتحقيق التميز، ورغبة جامحة للإبداع والنجاح، والبقاء في المقدمة، نتميز في عملنا",
+"CreativeContent":"المحتوى الإبداعي",
+"ProductivitySoftware":"برامج الإنتاجية",
+"ResponsiveAdvertising":"الإعلانات المدفوعة",
+"ExpressiveDesign":"تصميم معبر",
+
+"OURTeamMember":"أعضاء فريقنا",
+"OurExpertTeam":"فريق الخبراء لدينا",
+
+
+"OurProjectsS":"مشاريعنا",
+"ExploreOurBest":"شاهد أحدث مشاريعنا المكتملة",
+"ViewMoreBtn":"عرض المزيد",
+"IlawSocialMedia":" صفحات التواصل الاجتماعي iLAW",
+"IlawFairWeb":"موقع ilawfir",
+"Youtube":"يوتيوب",
+"Lulustore ":"لولو ستور",
+
+"Ourpricingplan":"خطة التسعير لدينا",
+"OurpricingplanTitle":"يمكننا تخصيص الباقة التي تناسب احتياجات عملك",
+"OurpricingplanBaragraph":"انضم الآن إلى مجتمع سكتش لتبدأ السيطرة على العالم الرقمي واحجز خطتك بأسعار تنافسية",
+"OurTestimonial":"شهادات عملائنا",
+"OurClientsSay":"ماذا يقول عنا عملاؤنا",
+"LookingParner?":"أبحث عن شريك التصميم?",
+"LookingParnerTitle":"هل تبحث عن شريك ناجح لعملك؟",
+"LookingParnerPragraph":"حان الوقت للسيطرة على العالم الرقمي، فهل أنت مستعد؟",
+
+
+    "Services":{
+    "WebServices":"إنشاء وتصميم المواقع الإلكترونية    ",
+    "DigitalMarketing ":"التسويق الرقمي    ",
+    "SocialMediaMarketing":"تسويق وسائل التواصل الاجتماعية    ",
+    "Seo/Sem":"SEO / SEM ",
+    "ContentMarketing":"التسويق بالمحتوى    ",
+    "CreativeDesigns":"التصاميم الإبداعية",
+    "VideoProduction ":"انتاج الفيديو    ",
+    "MarketingConsultingService":"خدمة الاستشارات التسويقية    "
+
 }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+

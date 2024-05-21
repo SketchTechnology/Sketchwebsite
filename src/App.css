@@ -1,12 +1,13 @@
 
 :root{
-  --main-Color:#005E64;
+  --main-Color:#256378;
+
 }
 img{
   object-fit: contain;
 }
 * {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Catamaran, sans-serif";
     scroll-behavior: smooth;
     text-decoration: none;
     box-shadow: none !important;
@@ -24,8 +25,8 @@ img{
     color: var(--main-Color) !important;
   }
   body{
-    background-color: #f5f0d6 !important;
-    overflow-x: hidden;
+    background-color: #f2f2ea !important;
+    overflow-x: hidden !important;
   }
 button:focus:not(:focus-visible),.navbar-toggler{
     border: none !important;
@@ -96,4 +97,67 @@ nav{
 }
 .MainBtn:hover::before{
   left: 0;
+}
+.contactUsBtn{
+
+  position: fixed;
+  bottom: 100px;
+  right: 5px;
+  z-index: 9999;
+}
+@media(max-width:768px){
+  .svgParent{
+    display: none !important;
+  }
+}
+.OurClientsLogo{
+  position: absolute;
+  background-color: white !important;
+  z-index: 9999;
+  height: 100%;
+}
+.OurClientsLogo h2 {
+
+  width: 250px;
+  height: 100% !important;
+}
+@media (max-width:768px){
+  .OurClientsLogo h2 {
+font-size: 18px !important;
+    width: 100px;
+    height: 100% !important;
+  }
+}
+.logoSlider{
+  z-index: 2;
+}
+.ServiceParent{
+  margin: 100px 0 !important;
+}
+.card{
+  background-color: transparent !important;
+}
+.card-text{
+  font-size: 18px;
+}
+.iconCards{
+  position: relative;
+}
+.iconCards::before{
+  content: '';
+  width: 15% !important;
+  background-color: var(--main-Color) !important;
+  height: 2px;
+  left: 2px;
+  transition: 0.2s;
+  border-radius: 20px;
+  z-index: 5555555555;
+  position: absolute;
+  bottom: -10px;
+  opacity: 0.5;
+}
+.card:hover .iconCards::before{
+  opacity: 1;
+  width: 100% !important;
+
 }

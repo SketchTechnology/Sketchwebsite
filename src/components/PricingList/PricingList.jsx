@@ -8,7 +8,7 @@ const PricingList = () => {
 <span></span>
 <p className="TeamTitle"> Price Plans</p>
 <span></span>
-</div>
+	</div>
 		<div className="bi-pricing-plan-content-4 mb-5 position-relative ">
 				<div className="bi-pricing-item-4 text-center price-first-item">
 							<div className="plan-title text-uppercase">
@@ -32,8 +32,8 @@ const PricingList = () => {
 								<div className="price-btn text-center text-uppercase">
 									<button >get started</button>
 								</div>
-							</div>
-							<div className="bi-pricing-item-4 text-center price-last-item">
+				</div>
+				<div className="bi-pricing-item-4 text-center price-last-item">
 								<div className="plan-title text-uppercase">
 									Standard pack
 								</div>
@@ -55,9 +55,9 @@ const PricingList = () => {
 								<div className="price-btn text-center text-uppercase">
 									<button>get started</button>
 								</div>
-							</div>
-						</div>
-					</div>
+				</div>
+		</div>
+	</div>
   )
 }
 

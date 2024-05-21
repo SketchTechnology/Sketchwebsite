@@ -1,0 +1,6 @@
+.accordion-header button,.accordion-body{
+    color: black !important;
+}
+.accordion-button.collapsed::after {
+    background-image: url("") !important; 
+  }

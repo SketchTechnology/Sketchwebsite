@@ -9,7 +9,10 @@ import img6 from '../../assets/img/Clients/client-9.png'
 import img7 from '../../assets/img/Clients/client-10.png'
 const LogoSlider = () => {
     return (
-        <div className="full-width-slider my-5"> {/* Wrapper div for full width */}
+        <div className="full-width-slider bg-white position-relative logoSlider ">
+            <div className="OurClientsLogo d-flex justify-content-center align-items-center">
+                <h2 className='d-flex justify-content-center align-items-center bg-dark shadow text-white  '>Our Clients</h2>
+                </div> {/* Wrapper div for full width */}
             <Slider
                 width={'400px'}       
                 duration={40}

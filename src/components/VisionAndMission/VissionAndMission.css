@@ -1,0 +1,117 @@
+.line{
+    width: 150px;
+    display: block;
+    height: 1px;
+    background-color: var(--main-Color) !important;
+}
+@media(max-width:768px){
+    .line{
+        width: 50px;
+        display: block;
+        height: 1px;
+        background-color: var(--main-Color) !important;
+    }
+    .CreativeAgencParent .MissionVision .row{
+        height: auto;  
+        flex-direction:column-reverse
+        }
+        .MissionVision ul li{
+            font-size: 15px;
+        }
+        .line ~ h2{
+            font-size: 25px !important;
+        }
+        .symbol{
+            font-size: 35px !important;
+        }
+}
+.CreativeAgencParent h2 {
+    font-size: 60px;
+    position: relative;
+}
+
+.symbol{
+    color: var(--main-Color) !important;
+    font-size: 75px;
+}
+.MissionVision ul li{
+    position: relative;
+}
+.MissionVision{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.missions,.vissions{
+    position: relative;
+}
+.missions::before{
+content: '';
+position: absolute;
+top: 50%;
+left: -10px;
+background-color: red;
+width: 7px;
+transform: translateY(-50%);
+height: 7px;
+border-radius: 50%;
+}
+.vissions::before{
+content: '';
+position: absolute;
+top: 50%;
+left: -10px;
+background-color: blue;
+width: 7px;
+transform: translateY(-50%);
+height: 7px;
+border-radius: 50%;
+}
+.MissionVision ul li:nth-child(1)::before{
+content: '';
+position: absolute;
+top: 50%;
+left: -10px;
+background-color: red;
+width: 7px;
+transform: translateY(-50%);
+height: 7px;
+border-radius: 50%;
+}
+.MissionVision ul li:nth-child(2)::before{
+content: '';
+position: absolute;
+top: 50%;
+left: -10px;
+background-color: green;
+width: 7px;
+transform: translateY(-50%);
+height: 7px;
+border-radius: 50%;
+}
+.MissionVision ul li:nth-child(3)::before{
+content: '';
+position: absolute;
+top: 50%;
+left: -10px;
+background-color: orange;
+width: 7px;
+transform: translateY(-50%);
+height: 7px;
+border-radius: 50%;
+}
+.MissionVision ul li:nth-child(4)::before{
+content: '';
+position: absolute;
+top: 50%;
+left: -10px;
+background-color: blue;
+width: 7px;
+transform: translateY(-50%);
+height: 7px;
+border-radius: 50%;
+}
+[alt="partners"]:hover{
+    transform: scale(1.2) !important;
+    filter: blur(2px);
+    transition: 0.5s !important;
+}

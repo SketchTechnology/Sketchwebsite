@@ -1,0 +1,215 @@
+
+.HoverItems{
+    width: 150px;
+    height: 550px !important;
+    border-radius: 10px;
+    transition:  1s !important;
+  }
+
+.opened{
+  
+  width: 550px;
+}
+
+.brightnees100{
+  filter: brightness(100%) !important;
+}
+.brightneesZero{
+  filter: brightness(0%) !important;
+}
+.hoverBtn{
+  background-color: red !important;
+  z-index: 999999;
+}
+
+@media(max-width:768px){
+  .HoverItems{
+    width: 90%;
+    height: 350px !important;
+    transition: 1s;
+    border-radius: 10px;
+}
+.HoverItems span {
+  position: absolute; 
+  width: 90%; 
+  z-index: 9999;
+  display: flex;
+  font-size: 25px ;
+  justify-content: center;
+  text-align: center; 
+  transform: rotate(0deg) !important; 
+}
+.opened{
+  height: 550px !important;
+}
+.HoverItems:hover{
+  height: 550px !important;
+} 
+}
+@media(max-width:425px){
+  .iconbg,.iconCard{
+display: none;
+  }
+  .HoverItems{
+    width: 90%;
+    height: 150px !important;
+    transition: 1s;
+    border-radius: 10px;
+}
+.HoverItems:hover{
+  height: 450px !important;
+} 
+.opened{
+  height: 450px !important;
+}
+}
+
+/* .HoverItems:hover{
+    width: 650px;
+} */
+.iconbg{
+  position: absolute;
+  left: 50%; 
+  top: 15px;
+  transform: translateX(-50%);
+  transition: 0s !important;
+  z-index: 999;
+}
+.iconCard{
+    position: absolute;
+    left: 50%; 
+    top: 30px;
+    transform: translateX(-50%);
+    transition: 0s !important;
+    z-index: 999;
+}
+.left20{
+  left: 20%;
+}
+/* HoverSlider.css */
+
+.HoverItems {
+    position: relative;
+    height: 200px; /* Adjust the height as needed */
+    background-color: rgba(0, 7, 26, .05);/* Background color for visibility */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+  }
+  .hoverData{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../../assets/img/new_home/offer/offer-img-1.png');
+    background-position: center;
+    background-size: cover;
+    height: 100% !important;
+    background-repeat: no-repeat !important; 
+    opacity: 0;
+    position: relative;
+    width: 100% !important;
+  }
+  .HoverItems span {
+    position: absolute; /* Position absolutely within the HoverItem */
+    width: 100%; 
+    z-index: 9999;
+    display: flex;
+    font-size: 25px ;
+    text-align: center; 
+    transform: rotate(90deg); 
+}
+
+@keyframes Appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+ /* .HoverItems:hover [ alt="icon"]{
+     filter: brightness(100%);
+ } */
+[ alt="icon"]{
+    width: 50px;
+    object-fit: contain;
+}
+.todo {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ddd;
+  padding: 2em;
+  box-shadow: 1px 2px 4px #0003;
+}
+
+h1 {
+  margin: 0 auto;
+}
+ul{
+  padding: 0 !important;
+}
+
+
+
+.hoverlist {
+  position: relative;
+  padding:10px 5px ;
+  border-bottom: 1px solid #48b2;
+  cursor: default;
+  transition: color 0.4s;
+}
+.hoverlist::after {
+  content: attr(theLittleDetails);
+  position: absolute;
+  left: 15%;
+  bottom: calc(100% - 1.5em);
+  color: white;
+  font-weight: 700;
+  padding: 1em 2em ;
+  pointer-events: none;
+  opacity: 0;
+  filter: drop-shadow(1px 2px 4px #0003);
+  transition: opacity 0.4s;
+   /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+li:hover {
+  color: #48b;
+}
+li:hover::marker {
+  font-weight: 700;
+}
+li:hover::after {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+li{
+  width: 100%;
+}
+
+.opacityOpened {
+  opacity: 1;
+}
+.hoverTitle{
+  opacity: 0 !important;
+}
+.showData{
+  animation: showTitle 0.2s linear forwards;
+  animation-delay: 0.8s; 
+  transition: 0.4s !important;
+}
+@keyframes showTitle{
+  0%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}

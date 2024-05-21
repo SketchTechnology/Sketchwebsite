@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import './Portfolio.css';
-import img from '../../assets/img/about/scroll-imgThree.png';
+import img from '../../assets/img/about/scrolImgnew.png';
 import LazyLoadingImage from '../LazyLoadingImg/LazyLoadingImg';
 
 const Portfolio = () => {
@@ -9,7 +9,7 @@ const Portfolio = () => {
       const image = document.querySelector('.portfolioImg');
      const scrollPosition = window.scrollY;
         const scaledScrollPosition = scrollPosition * 0.1;
-        image.style.transform = `translateX(-${scaledScrollPosition}px) scale(1.9)`;
+        image.style.transform = `translateX(-${scaledScrollPosition}px) `;
     
     };
 
@@ -21,10 +21,10 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="overflowHidden">
+    <div style={{overflow:'hidden'}} className=' portfolioparent my-4' >
 
-    <div className='portfolioImg position-relative'>
-      <LazyLoadingImage src={img} alt={'portfolio'}   />
+    <div className='portfolioImg position-relative  w-100 d-flex justify-content-center align-items-center'>
+      <LazyLoadingImage src={img} alt={'portfolio'}    />
     </div>
     </div>
   );

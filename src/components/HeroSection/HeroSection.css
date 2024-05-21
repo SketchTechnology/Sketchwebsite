@@ -1,11 +1,35 @@
-.HeroSectionParent{
+/* .HeroSectionParent{
     background: radial-gradient(rgba(255,0,0,0.1),rgba(255,255,255,0.3));
     
+}
+.HeroSectionParent .img{
+    position: absolute;
+    z-index: -1;
+}
+.imgOne{
+    left: -10%;
+    top: 20%;
+}
+.imgTwo{
+    left: -10%;
+    top: 57%;
+}
+.imgThree{
+    left: -20%;
+    top: 80%;
+}
+.imgFour{
+    right: -10%;
+    top: 15%;
+}
+.imgFive{
+    right: 0%;
+    top: 60%;
 }
 h1 {
     -webkit-text-stroke-color: transparent;
     -webkit-text-fill-color: transparent;
-    font-size: 100px; /* Use viewport width unit for responsive font size */
+    font-size: 100px; 
     -webkit-text-stroke-width: 2px;
     margin-top: 120px !important;
 }
@@ -35,9 +59,9 @@ h1 span {
 h1 strong {
     line-height: 300px;
     display: flex;
-    font-size: 300px; /* Use viewport width unit for responsive font size */
+    font-size: 300px; 
     font-weight: 900;
-    background: linear-gradient(180deg, #005e64 0, rgba(255, 56, 56, 0) 100%);
+    background: linear-gradient(180deg, #256378 0, rgba(255, 56, 56, 0) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: inherit;
@@ -57,4 +81,82 @@ h1 strong {
         line-height: 100px;
         font-size: 110px;
     }
+   
+}
+@media(max-width:1200px){
+    .img{
+        display: none;
+    }
+} */
+/* new ------------------------------ */ 
+.HeroSection{
+    background-image: url('../../assets/img/new_home/hero/hero-1-bg-img.png');
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.LayerImgOne,.LayerImgTwo{
+    position: absolute;
+z-index: 2;
+}
+.LayerImgOne img {
+    object-fit: cover;
+    filter: sepia(1) hue-rotate(180deg) saturate(1.5) brightness(0.5);}
+.LayerImgOne{
+    top: 0;
+    left: 0;
+}
+.LayerImgTwo img {
+    filter: sepia(1) hue-rotate(180deg) saturate(1.5) brightness(0.5);}
+
+.LayerImgTwo{
+    right: 0;
+    top: 0;
+}
+.Welcomebadge{
+    position: relative;
+    z-index: 3;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.Welcomebadge p {
+    color :white !important
+}
+.mainTitleHero h2{ 
+    font-size: 100px;
+    width: 75%;
+    position: relative;
+    z-index: 3;
+}
+.mainParaHero p{
+    font-size: 35px;
+    width: 70%;
+    color:white !important;
+    position: relative;
+    z-index: 3;
+}
+.HeroBtn{
+    position: relative;
+    z-index: 3;
+}
+@media(max-width:768px){
+    .mainTitleHero h2{ 
+        font-size: 50px;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+    }
+    .mainParaHero p{
+        font-size: 20px;
+        width: 100%;
+        color:white !important;
+        position: relative;
+        z-index: 3;
+    } 
 }

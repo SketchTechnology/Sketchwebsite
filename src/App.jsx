@@ -1,7 +1,6 @@
 import './App.css'
 import AboutCompany from './components/AboutCompany/AboutCompany';
 import HeroSections from './components/HeroSection/HeroSections';
-import LogoSlider from './components/LogoSlider/LogoSlider';
 import OurExpertTeam from './components/OurExpertTeam/OurExpertTeam';
 import OurServices from './components/OurServices/OurServices';
 import Portfolio from './components/Portfolio/Portfolio';
@@ -15,12 +14,11 @@ function App() {
 <HeroSections/>
 <AboutCompany/>
 <OurServices/>
-<LogoSlider/>
 <WhyChooseUs/>
 <Portfolio/>
 <OurExpertTeam/>
 <TitleSlider/>
-<PricingList/>
+ <PricingList/> 
 
     </div>
   )

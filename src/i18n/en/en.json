@@ -1,5 +1,92 @@
 {
     "navigation":{
-        "home":"home"
-    }
+        "Home":"Home",
+        "About":"About",
+        "Service":"Service",
+        "Portoflio":"Portoflio",
+        "Blog":"Blog"
+    },
+    "HomeContent":"Your aspirations and goals, Our approaches, and strategies. Let's collaborate to create digital masterpieces!    ",
+    "ContactUsBtn":"Contact us",
+    "AboutCompany":"About Company",
+    "AboutcompanyTitle":"Where innovation meets impact", 
+   "AboutCompanyParagraph":" We specialize in driving unparalleled growth and delivering exceptional results for businesses just like yours",
+   "CreativeTeam":"Creative team",
+   "24/5_Support ":"24/5 Support",
+   "ManagementSystem":"Management system",
+   "HighQuality":"High quality",
+   "AboutUsBtn":"About Us",
+   "SketchDigital":"Sketch Digital Marketing Agency ",
+
+   "OurBestServices":{
+    "OurService":"OUR BEST SERVICES",
+"WhereInnovation":"Where innovation meets impact",
+"WebServices":"Web Services",
+"DigitalMarketing ":"Digital Marketing ",
+"SocialMediaMarketing":"Social Media Marketing",
+"Seo/Sem":"SEO / SEM ",
+"ContentMarketing":"Content Marketing",
+"CreativeDesigns":"Creative Designs",
+"VideoProduction":"Video Production ",
+"MarketingConsulting":"Marketing Consulting Service"
+},
+"AnimationSection":"Time to Toss Away & Say Goodbye to the traditional way",
+
+"WhyChooseUs":"WHY CHOOSE US",
+"WhyChooseUsTitle":"Digital Marketing isn't just a jobit's our craft",
+"WhyChooseUsBaragraph":"Our relentless pursuit of excellence, our hunger for creativity, success, and staying ahead of the curve set us apart from the competition",
+"CreativeContent":"Creative Content",
+"ProductivitySoftware":"Productiv Software",
+"ResponsiveAdvertising":"Responsive Advertising",
+"ExpressiveDesign":"Expressive Design",
+
+"OURTeamMember":"OUR TEAM MEMBER",
+"OurExpertTeam":"Our Expert Team",
+
+
+"OurProjectsS":"OUR PROJECTS",
+"ExploreOurBest":"Explore Our Best RecentlyCompleted Projects",
+"ViewMoreBtn":"View more",
+"IlawSocialMedia":" iLAW Social Media ",
+"ilawFairWeb":"iLAWFAIR Web",
+"Youtube":"Youtube",
+"Lulustore ":"Lulu store ",
+
+"Ourpricingplan":"OURPRICINGPLAN",
+"OurpricingplanTitle":"We will offer the best pricing package to suit your business",
+"OurpricingplanBaragraph":"Partner with Sketch and dominate the digital landscape Book your business plan at the best prices",
+"OurTestimonial":"OUR TESTIMONIAL",
+"OurClientsSay":"Our Clients Say About Our Services",
+"LookingParner?":"Looking for a Design Parner?",
+"LookingParnerTitle":"Are you looking for a successful partner for your business?",
+"LookingParnerPragraph":"Ready to skyrocket your online visibility?It's time to dominate the digital realm!",
+
+
+    "Services":{
+    "WebServices":"Web Services",
+    "DigitalMarketing ":"Digital Marketing ",
+    "SocialMediaMarketing":"Social Media Marketing",
+    "Seo/Sem ":"SEO / SEM ",
+    "ContentMarketing":"Content Marketing",
+    "CreativeDesigns":"Creative Designs",
+    "VideoProduction ":"Video Production ",
+    "MarketingConsultingService":"Marketing Consulting Service"
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
