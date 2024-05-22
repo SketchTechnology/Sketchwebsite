@@ -60,4 +60,37 @@
     right: 0;
     color: white !important;
   }
- 
+ .sliderContent{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    font-size: 35px;
+
+ }
+ .sliderContent img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+ }
+ .arrowImg {
+    border: 2px solid red;
+    border-radius: 50%;
+    transition: 0.5s;
+ }
+ .arrowImg:hover{
+    cursor: pointer;
+    animation: fliping 0.5s forwards linear;
+ }
+ @keyframes fliping {
+    0%{
+        transform: rotate(0) scale(1);
+        
+    }
+    100%{
+        transform: rotate(360deg) scale(1.1);
+    }
+ }
+ .sliderContent span:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+ }

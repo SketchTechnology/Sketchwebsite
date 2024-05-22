@@ -20,6 +20,9 @@ import SingleService from "./pages/SingleService/SingleService.jsx";
 import DesignAndDevelopment from "./pages/SingleService/DesignAndDevelopment.jsx";
 import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 import WeDev from "./pages/SingleService/WeDev.jsx";
+import { Blogs } from "./pages/Blogs/Blogs.jsx";
+import Portfolio from "./components/Portfolio/Portfolio.jsx";
+import { PortfolioPage } from "./pages/Portfolio/PortfolioPage.jsx";
 
 const RouterStructure = () => {
   
@@ -32,6 +35,8 @@ const RouterStructure = () => {
             <Route path="/" index element={<App />} />
             <Route path="AboutUs"  element={<AboutUs/>} />
             <Route path="ContactUs"  element={<ContactUs/>} />
+            <Route path="Portfolio"  element={<PortfolioPage/>} />
+            <Route path="Blogs"  element={<Blogs/>} />
             <Route path="Services"  element={<Services/>} />
             <Route path="SingleService"  element={<SingleService/>} >
             <Route index element={<Navigate to="DesignAndDevelopment" />} />

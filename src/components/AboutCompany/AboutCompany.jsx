@@ -13,9 +13,10 @@ import iconOne from "../../assets/img/new_home/about/about-2-icon-1.png";
 import iconTwo from "../../assets/img/new_home/about/about-2-icon-2.png";
 import { useTranslation } from "react-i18next";
 import SimpleCard from "../Cards/SimpleCard";
+import { useNavigate } from "react-router";
 const AboutCompany = () => {
   const { t } = useTranslation();
-
+const navigate = useNavigate()
   const content = [
     {
       icon: "fa-solid fa-users",
@@ -77,12 +78,15 @@ const AboutCompany = () => {
               finibus dolo et phar etra porta. sed quam elit, lacinia vitae mi
               quis
             </p>
-            <div className="row gap-1  my-4 flex-md-nowrap flex-wrap justify-content-around ">
+            {/* <div className="row gap-1  my-4 flex-md-nowrap flex-wrap justify-content-around ">
               {cardContent.map((item, ind) => (
                 <div key={ind} className="col-12  col-md-6" data-aos="zoom-in-up" data-aos-delay="200" >
                 <SimpleCard item={item}  />
                 </div>
               ))}
+            </div> */}
+            <div onClick={()=>navigate('AboutUs')}>
+            <MainBtn content={'More AboutUs'}/>
             </div>
           </div>
         </div>

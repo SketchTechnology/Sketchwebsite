@@ -71,12 +71,12 @@ const MainNavbar = () => {
             <Link className='nav-link' to={'Services'}>
               {t("navigation.Service")}
             </Link>
-            <Nav.Link href="#about">
+            <Link to="Portfolio" className='nav-link'>
               {t("navigation.Portoflio")}
-            </Nav.Link>
-            <Nav.Link href="#about" >
+            </Link>
+            <Link to="Blogs" className='nav-link' >
               {t("navigation.Blog")}
-            </Nav.Link>
+            </Link>
             <Link to={'ContactUs'} className='nav-link'>
            Contact us
             </Link>

@@ -28,6 +28,12 @@
   left: -20px;
   z-index: -1;/
 }
+.bi-pricing-plan-content-4 .bi-pricing-item-4:nth-child(3) {
+  position: relative;
+  top: 0px;
+  left: -40px;
+  z-index: -1;/
+}
 .bi-pricing-item-4 .plan-title {
   color: #fff;
   margin: 0 auto 40px;
@@ -68,6 +74,11 @@
 }
 @media(max-width:768px){
   .bi-pricing-plan-content-4 .bi-pricing-item-4:nth-child(2){
+    top: 0;
+    left: 0;
+    z-index: 1;/
+  }
+  .bi-pricing-plan-content-4 .bi-pricing-item-4:nth-child(3){
     top: 0;
     left: 0;
     z-index: 1;/
