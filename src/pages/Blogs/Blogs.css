@@ -1,5 +1,5 @@
 .linePill{
-    width: 250px;
+    width: 350px;
     height: 1px;
     background-color: var(--main-Color);
 
@@ -34,7 +34,7 @@
 
 .blogsData:nth-child(even) .blogPillsCont {
     flex-direction: row-reverse;
-    left: 140px !important;
+    left: 150px !important;
 }
 .blogsData:nth-child(odd) .blogPillsCont {
     flex-direction: row !important;

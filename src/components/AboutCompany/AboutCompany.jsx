@@ -65,8 +65,8 @@ const navigate = useNavigate()
       </div>
       <div className="row">
         <div className="col-12 col-lg-5" data-aos="zoom-in">
-          <div className="imgHolder  w-100">
-            <img src={imgBg} alt="" />
+          <div className="imgHolder rounded-3 rounded  w-100">
+            <img src={imgBg} alt="" className="rounded-3 rounded" />
           </div>
         </div>
         <div className="col-12 col-lg-7 p-md-5  p-2">
@@ -85,7 +85,7 @@ const navigate = useNavigate()
                 </div>
               ))}
             </div> */}
-            <div onClick={()=>navigate('AboutUs')}>
+            <div onClick={()=>navigate('AboutUs')} className="my-4">
             <MainBtn content={'More AboutUs'}/>
             </div>
           </div>

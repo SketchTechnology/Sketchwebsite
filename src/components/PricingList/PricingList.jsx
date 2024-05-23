@@ -8,7 +8,7 @@ const PricingList = () => {
 <p className="TeamTitle"> Price Plans</p>
 <span></span>
 	</div>
-		<div className="bi-pricing-plan-content-4 mb-5 position-relative ">
+		<div className="bi-pricing-plan-content-4 mb-5 gap-5 flex-wrap position-relative ">
 				<div className="bi-pricing-item-4 text-center price-first-item">
 							<div className="plan-title text-uppercase">
 									Standard pack

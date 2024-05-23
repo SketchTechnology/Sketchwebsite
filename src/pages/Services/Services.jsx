@@ -19,7 +19,8 @@ const Services = () => {
   return (
     <div>
   <HeadSec BtnsContent={BtnsContent} Title={Title}/>
-<Quality/>    </div>
+<Quality/>  
+  </div>
   )
 }
 

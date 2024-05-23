@@ -96,6 +96,7 @@ height: 100%;
     border: 2px solid var(--main-Color);
     left: 20px;
     z-index: -1;
+    border-radius: 10px;
     top: 50px;
 }
 @media (max-width:768px){

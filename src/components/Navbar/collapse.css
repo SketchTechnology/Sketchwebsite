@@ -8,7 +8,7 @@
     transition: 0.5s !important;
 }
 nav{
-    z-index: 99999999;
+    z-index: 9999999999999999999999;
 }
 .shows{
     left: 0;
@@ -53,6 +53,7 @@ nav{
     /* Clip the background to the text */
     -webkit-background-clip: text !important;
     background-clip: text !important;
+    
   
     /* Set the text color to transparent */
     color: transparent !important;
