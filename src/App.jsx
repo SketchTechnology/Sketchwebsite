@@ -7,6 +7,10 @@ import Portfolio from './components/Portfolio/Portfolio';
 import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
 import TitleSlider from './components/TitleSlider/TitleSlider';
 import PricingList from './components/PricingList/PricingList';
+import Test from './components/Test/Test';
+import DragContainer from './components/DraggableSquare/DraggableSquare';
+import DraggableSquare from './components/DraggableSquare/DraggableSquare';
+
 function App() {
 
   return (
@@ -17,7 +21,7 @@ function App() {
 <OurServices/>
 <WhyChooseUs/>
 <Portfolio/>
-<OurExpertTeam/>
+{/* <DraggableSquare /> */}
 <TitleSlider/>
  <PricingList/> 
 {/* s? */}

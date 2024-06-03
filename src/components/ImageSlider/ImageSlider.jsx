@@ -35,8 +35,8 @@ const ImageSlider = () => {
       {" "}
       {/* Wrapper div for full width */}
       <Slider
-        width={"500px"}
-        duration={40}
+        width={"600px"}
+        duration={80}
         toRight={false}
         pauseOnHover={true}
         blurBorders={false}
@@ -51,10 +51,10 @@ const ImageSlider = () => {
               item.img
             }
             alt={"UiUx"}
-            height={"400px"}
+            height={"600px"}
             />
             <div className="sliderContent px-3 align-items-center w-100 d-flex justify-content-between">
-          <span >
+          <span className="fs-2" >
             {item.content}
           </span>
           <div className="arrowImg">

@@ -22,18 +22,7 @@
   -webkit-box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.25) inset;
 }
-.bi-pricing-plan-content-4 .bi-pricing-item-4:nth-child(2) {
-  position: relative;
-  top: 50px;
-  left: -20px;
-  z-index: -1;/
-}
-.bi-pricing-plan-content-4 .bi-pricing-item-4:nth-child(3) {
-  position: relative;
-  top: 0px;
-  left: -40px;
-  z-index: -1;/
-}
+
 .bi-pricing-item-4 .plan-title {
   color: #fff;
   margin: 0 auto 40px;
